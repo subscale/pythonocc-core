@@ -27,6 +27,7 @@ along with pythonOCC.  If not, see <http://www.gnu.org/licenses/>.
 %include <python/std_list.i>
 %include <python/std_string.i>
 %include <python/std_basic_string.i>
+%include <python/std_iostream.i>
 
 %pythoncode %{
 def _dumps_object(klass):
