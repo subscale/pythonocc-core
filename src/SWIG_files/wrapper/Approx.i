@@ -334,14 +334,21 @@ opencascade::handle<Geom_BSplineCurve>
 ") Curve;
 		opencascade::handle<Geom_BSplineCurve> Curve();
 
+		/****************** Dump ******************/
+		/**** md5 signature: d37b43e0b2386dc096d5d707876db157 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Print on the stream o information about the object.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+o: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & o);
+
 		/****************** HasResult ******************/
 		/**** md5 signature: 345d4b0f7e88f528928167976d8256d5 ****/
 		%feature("compactdefaultargs") HasResult;
@@ -640,14 +647,21 @@ opencascade::handle<Geom_BSplineCurve>
 ") Curve3d;
 		opencascade::handle<Geom_BSplineCurve> Curve3d();
 
+		/****************** Dump ******************/
+		/**** md5 signature: d37b43e0b2386dc096d5d707876db157 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Print the maximum errors(s).
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+o: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & o);
+
 		/****************** HasResult ******************/
 		/**** md5 signature: 345d4b0f7e88f528928167976d8256d5 ****/
 		%feature("compactdefaultargs") HasResult;
@@ -1869,14 +1883,21 @@ NbKnots: int
 ") Curves2dShape;
 		void Curves2dShape(Standard_Integer &OutValue, Standard_Integer &OutValue, Standard_Integer &OutValue);
 
+		/****************** Dump ******************/
+		/**** md5 signature: d37b43e0b2386dc096d5d707876db157 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Display information on approximation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+o: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & o);
+
 		/****************** Eval ******************/
 		/**** md5 signature: 71e7f11e45548ac47de3b270019a0b2d ****/
 		%feature("compactdefaultargs") Eval;

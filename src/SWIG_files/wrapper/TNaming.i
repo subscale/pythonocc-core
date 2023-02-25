@@ -346,6 +346,54 @@ bool
 ") OuterWire;
 		static Standard_Boolean OuterWire(const TopoDS_Face & theFace, TopoDS_Wire & theWire);
 
+		/****************** Print ******************/
+		/**** md5 signature: 2b639b8df3fe00401374dd95e415224e ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints the evolution <evol> as a string on the stream <s> and returns <s>.
+
+Parameters
+----------
+EVOL: TNaming_Evolution
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TNaming_Evolution EVOL, std::ostream & S);
+
+		/****************** Print ******************/
+		/**** md5 signature: 0086f15e63801a19d591d96a9d20bb2a ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints the name of name type <name> as a string on the stream <s> and returns <s>.
+
+Parameters
+----------
+NAME: TNaming_NameType
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TNaming_NameType NAME, std::ostream & S);
+
+		/****************** Print ******************/
+		/**** md5 signature: acadfcdd30dbbb74b400e87246c92ac0 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints the content of usedshapes private attribute as a string table on the stream <s> and returns <s>.
+
+Parameters
+----------
+ACCESS: TDF_Label
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TDF_Label & ACCESS, std::ostream & S);
+
 		/****************** Replicate ******************/
 		/**** md5 signature: b05536a641bcb5721eea10c9d85c5058 ****/
 		%feature("compactdefaultargs") Replicate;
@@ -1773,14 +1821,21 @@ opencascade::handle<TDF_DeltaOnRemoval>
 ") DeltaOnRemoval;
 		virtual opencascade::handle<TDF_DeltaOnRemoval> DeltaOnRemoval();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the attribute on <astream>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -1965,14 +2020,21 @@ TNaming_Name
 ") ChangeName;
 		TNaming_Name & ChangeName();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -1981,6 +2043,23 @@ TNaming_Name
                 self->DumpJson(s, depth);
                 return s.str();}
             };
+		/****************** ExtendedDump ******************/
+		/**** md5 signature: cdafdec412b1ac94fc1e049a6ac0bb97 ****/
+		%feature("compactdefaultargs") ExtendedDump;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOS: std::ostream
+aFilter: TDF_IDFilter
+aMap: TDF_AttributeIndexedMap
+
+Returns
+-------
+None
+") ExtendedDump;
+		virtual void ExtendedDump(std::ostream & anOS, const TDF_IDFilter & aFilter, TDF_AttributeIndexedMap & aMap);
+
 		/****************** GetID ******************/
 		/**** md5 signature: afe6002d90f641ca3ea8c9ae9f8fe97c ****/
 		%feature("compactdefaultargs") GetID;
@@ -3862,14 +3941,21 @@ None
 ") Destroy;
 		void Destroy();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the attribute on <astream>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{

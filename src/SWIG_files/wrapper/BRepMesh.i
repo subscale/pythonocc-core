@@ -1171,14 +1171,21 @@ None
 ") RemoveNode;
 		void RemoveNode(const Standard_Integer theIndex, const Standard_Boolean isForce = Standard_False);
 
+		/****************** Statistics ******************/
+		/**** md5 signature: 1a1dab8d9fff60f7ef456c28f93e75d1 ****/
+		%feature("compactdefaultargs") Statistics;
+		%feature("autodoc", "Dumps information about this structure. @param thestream stream to be used for dump.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string StatisticsToString() {
-            std::stringstream s;
-            self->Statistics(s);
-            return s.str();}
-        };
+Parameters
+----------
+theStream: std::ostream
+
+Returns
+-------
+None
+") Statistics;
+		void Statistics(std::ostream & theStream);
+
 		/****************** SubstituteElement ******************/
 		/**** md5 signature: 12a4e39048c62f85d59c6cb6b113dccd ****/
 		%feature("compactdefaultargs") SubstituteElement;
@@ -4242,14 +4249,21 @@ None
 ") SetTolerance;
 		void SetTolerance(const Standard_Real theToleranceX, const Standard_Real theToleranceY);
 
+		/****************** Statistics ******************/
+		/**** md5 signature: 1a1dab8d9fff60f7ef456c28f93e75d1 ****/
+		%feature("compactdefaultargs") Statistics;
+		%feature("autodoc", "Prints statistics.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string StatisticsToString() {
-            std::stringstream s;
-            self->Statistics(s);
-            return s.str();}
-        };
+Parameters
+----------
+theStream: std::ostream
+
+Returns
+-------
+None
+") Statistics;
+		void Statistics(std::ostream & theStream);
+
 		/****************** Substitute ******************/
 		/**** md5 signature: 02ac53c87b5a046c4ee9a0b10ac44d20 ****/
 		%feature("compactdefaultargs") Substitute;

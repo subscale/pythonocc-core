@@ -175,6 +175,54 @@ TopAbs_Orientation
 ") Compose;
 		static TopAbs_Orientation Compose(const TopAbs_Orientation Or1, const TopAbs_Orientation Or2);
 
+		/****************** Print ******************/
+		/**** md5 signature: f2bc915db789eecaddaf7f8a542302b9 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints the name of shape type as a string on the stream.
+
+Parameters
+----------
+theShapeType: TopAbs_ShapeEnum
+theStream: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TopAbs_ShapeEnum theShapeType, std::ostream & theStream);
+
+		/****************** Print ******************/
+		/**** md5 signature: 6ad8c3d2eaff28edc070aae5129544a1 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints the name of the orientation as a string on the stream.
+
+Parameters
+----------
+theOrientation: TopAbs_Orientation
+theStream: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TopAbs_Orientation theOrientation, std::ostream & theStream);
+
+		/****************** Print ******************/
+		/**** md5 signature: 9a9b3768d9e4f7b3106175734ca85d5b ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints the name of the state <st> as a string on the stream <s> and returns <s>.
+
+Parameters
+----------
+St: TopAbs_State
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TopAbs_State St, std::ostream & S);
+
 		/****************** Reverse ******************/
 		/**** md5 signature: 24070ddabf8011f0d7eb29a4dc573a82 ****/
 		%feature("compactdefaultargs") Reverse;

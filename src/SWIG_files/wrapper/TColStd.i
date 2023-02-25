@@ -1008,14 +1008,21 @@ bool
 ") Remove;
 		Standard_Boolean Remove(const Standard_Integer aKey);
 
+		/****************** Statistics ******************/
+		/**** md5 signature: 1a1dab8d9fff60f7ef456c28f93e75d1 ****/
+		%feature("compactdefaultargs") Statistics;
+		%feature("autodoc", "Prints useful statistics about the map. it can be used to test the quality of the hashcoding.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string StatisticsToString() {
-            std::stringstream s;
-            self->Statistics(s);
-            return s.str();}
-        };
+Parameters
+----------
+theStream: std::ostream
+
+Returns
+-------
+None
+") Statistics;
+		void Statistics(std::ostream & theStream);
+
 		/****************** Subtract ******************/
 		/**** md5 signature: 190f8077cde18ce8900964ed206c3e98 ****/
 		%feature("compactdefaultargs") Subtract;

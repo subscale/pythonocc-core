@@ -160,6 +160,61 @@ VrmlConverter_OrthographicCamera = VrmlConverter_TypeOfCamera.VrmlConverter_Orth
 ****************************/
 class VrmlConverter_Curve {
 	public:
+		/****************** Add ******************/
+		/**** md5 signature: f77568c42bfd62e2909598e33b21279c ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds to the ostream the drawing of the curve acurve. the aspect is defined by lineaspect in adrawer.
+
+Parameters
+----------
+aCurve: Adaptor3d_Curve
+aDrawer: VrmlConverter_Drawer
+anOStream: std::ostream
+
+Returns
+-------
+None
+") Add;
+		static void Add(const Adaptor3d_Curve & aCurve, const opencascade::handle<VrmlConverter_Drawer> & aDrawer, std::ostream & anOStream);
+
+		/****************** Add ******************/
+		/**** md5 signature: 3196c4271392c6a3ad65b906ad2f2f95 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds to the ostream the drawing of the curve acurve. the aspect is defined by lineaspect in adrawer. the drawing will be limited between the points of parameter u1 and u2.
+
+Parameters
+----------
+aCurve: Adaptor3d_Curve
+U1: float
+U2: float
+aDrawer: VrmlConverter_Drawer
+anOStream: std::ostream
+
+Returns
+-------
+None
+") Add;
+		static void Add(const Adaptor3d_Curve & aCurve, const Standard_Real U1, const Standard_Real U2, const opencascade::handle<VrmlConverter_Drawer> & aDrawer, std::ostream & anOStream);
+
+		/****************** Add ******************/
+		/**** md5 signature: 4d8e1f226cc328fcdf9186ef585c5a61 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds to the ostream the drawing of the curve acurve. the aspect is the current aspect. the drawing will be limited between the points of parameter u1 and u2. anbpoints defines number of points on one interval.
+
+Parameters
+----------
+aCurve: Adaptor3d_Curve
+U1: float
+U2: float
+anOStream: std::ostream
+aNbPoints: int
+
+Returns
+-------
+None
+") Add;
+		static void Add(const Adaptor3d_Curve & aCurve, const Standard_Real U1, const Standard_Real U2, std::ostream & anOStream, const Standard_Integer aNbPoints);
+
 };
 
 
@@ -174,6 +229,116 @@ class VrmlConverter_Curve {
 **************************************/
 class VrmlConverter_DeflectionCurve {
 	public:
+		/****************** Add ******************/
+		/**** md5 signature: fa3cf6474a22907885c6263224b0cf1a ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds to the ostream the drawing of the curve acurve with respect to the maximal chordial deviation defined by the drawer adrawer. the aspect is defined by lineaspect in adrawer.
+
+Parameters
+----------
+anOStream: std::ostream
+aCurve: Adaptor3d_Curve
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, Adaptor3d_Curve & aCurve, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
+		/****************** Add ******************/
+		/**** md5 signature: 39f475f2bc1fcbcd57f32d9efba5b2a0 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds to the ostream the drawing of the curve acurve with respect to the maximal chordial deviation defined by the drawer adrawer. the aspect is defined by lineaspect in adrawer. the drawing will be limited between the points of parameter u1 and u2.
+
+Parameters
+----------
+anOStream: std::ostream
+aCurve: Adaptor3d_Curve
+U1: float
+U2: float
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, Adaptor3d_Curve & aCurve, const Standard_Real U1, const Standard_Real U2, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
+		/****************** Add ******************/
+		/**** md5 signature: 9eb6209c6c437e1de208c514bbc6c3bc ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds to the ostream the drawing of the curve acurve with respect to the maximal chordial deviation adeflection. the aspect is the current aspect.
+
+Parameters
+----------
+anOStream: std::ostream
+aCurve: Adaptor3d_Curve
+aDeflection: float
+aLimit: float
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, Adaptor3d_Curve & aCurve, const Standard_Real aDeflection, const Standard_Real aLimit);
+
+		/****************** Add ******************/
+		/**** md5 signature: 970b94fef97d65ba55ddab3b8061c036 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds to the ostream the drawing of the curve acurve with respect to the maximal chordial deviation adeflection. the aspect is the current aspect.
+
+Parameters
+----------
+anOStream: std::ostream
+aCurve: Adaptor3d_Curve
+aDeflection: float
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, Adaptor3d_Curve & aCurve, const Standard_Real aDeflection, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
+		/****************** Add ******************/
+		/**** md5 signature: cfb82f5b167e71e8335c2fb562364aae ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds to the ostream the drawing of the curve acurve with respect to the maximal chordial deviation adeflection. the aspect is the current aspect the drawing will be limited between the points of parameter u1 and u2.
+
+Parameters
+----------
+anOStream: std::ostream
+aCurve: Adaptor3d_Curve
+U1: float
+U2: float
+aDeflection: float
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, Adaptor3d_Curve & aCurve, const Standard_Real U1, const Standard_Real U2, const Standard_Real aDeflection);
+
+		/****************** Add ******************/
+		/**** md5 signature: ee27b5c0244974cd4e5e8d540e9f3dd4 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds to the ostream the drawing of the curve acurve with the array of parameters to retrieve points on curve.
+
+Parameters
+----------
+anOStream: std::ostream
+aCurve: Adaptor3d_Curve
+aParams: TColStd_HArray1OfReal
+aNbNodes: int
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, const Adaptor3d_Curve & aCurve, const opencascade::handle<TColStd_HArray1OfReal> & aParams, const Standard_Integer aNbNodes, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
 };
 
 
@@ -742,6 +907,24 @@ bool
 *******************************/
 class VrmlConverter_HLRShape {
 	public:
+		/****************** Add ******************/
+		/**** md5 signature: 30e4fe59d2964122c8eb4a1e0b4e7266 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aShape: TopoDS_Shape
+aDrawer: VrmlConverter_Drawer
+aProjector: VrmlConverter_Projector
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, const TopoDS_Shape & aShape, const opencascade::handle<VrmlConverter_Drawer> & aDrawer, const opencascade::handle<VrmlConverter_Projector> & aProjector);
+
 };
 
 
@@ -972,14 +1155,21 @@ None
 ") VrmlConverter_Projector;
 		 VrmlConverter_Projector(const TopTools_Array1OfShape & Shapes, const Standard_Real Focus, const Standard_Real DX, const Standard_Real DY, const Standard_Real DZ, const Standard_Real XUp, const Standard_Real YUp, const Standard_Real ZUp, const VrmlConverter_TypeOfCamera Camera = VrmlConverter_NoCamera, const VrmlConverter_TypeOfLight Light = VrmlConverter_NoLight);
 
+		/****************** Add ******************/
+		/**** md5 signature: fe7a6c17a63ece511d1868bb0e2144ae ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "Adds into anostream if they are defined in create. perspectivecamera, orthographiccamera, directionlight, pointlight, spotlight with matrixtransform from vrmlconverter;.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string AddToString() {
-            std::stringstream s;
-            self->Add(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOStream: std::ostream
+
+Returns
+-------
+None
+") Add;
+		void Add(std::ostream & anOStream);
+
 		/****************** Camera ******************/
 		/**** md5 signature: b0f9e1c3deb52397f7725e2e4fefc65e ****/
 		%feature("compactdefaultargs") Camera;
@@ -1059,6 +1249,23 @@ None
 **********************************/
 class VrmlConverter_ShadedShape {
 	public:
+		/****************** Add ******************/
+		/**** md5 signature: 6853d47fdcd987a19eaa45ce2ad05bc1 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aShape: TopoDS_Shape
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, const TopoDS_Shape & aShape, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
 		/****************** ComputeNormal ******************/
 		/**** md5 signature: 94eb9e8b7db2c9db0658575ebc46926f ****/
 		%feature("compactdefaultargs") ComputeNormal;
@@ -1221,6 +1428,79 @@ Vrml_ShapeHints
 *************************************************/
 class VrmlConverter_WFDeflectionRestrictedFace {
 	public:
+		/****************** Add ******************/
+		/**** md5 signature: 13df692750a7fcf225b5286ed599cc3e ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aFace: BRepAdaptor_Surface
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, const opencascade::handle<BRepAdaptor_Surface> & aFace, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
+		/****************** Add ******************/
+		/**** md5 signature: 90da66cc4406b2e2f1bfc7074ed66a78 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aFace: BRepAdaptor_Surface
+DrawUIso: bool
+DrawVIso: bool
+Deflection: float
+NBUiso: int
+NBViso: int
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, const opencascade::handle<BRepAdaptor_Surface> & aFace, const Standard_Boolean DrawUIso, const Standard_Boolean DrawVIso, const Standard_Real Deflection, const Standard_Integer NBUiso, const Standard_Integer NBViso, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
+		/****************** AddUIso ******************/
+		/**** md5 signature: 4aee442358ca971c2da6856dad976df1 ****/
+		%feature("compactdefaultargs") AddUIso;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aFace: BRepAdaptor_Surface
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") AddUIso;
+		static void AddUIso(std::ostream & anOStream, const opencascade::handle<BRepAdaptor_Surface> & aFace, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
+		/****************** AddVIso ******************/
+		/**** md5 signature: ef51abaf211cf460780b49e6f72a0132 ****/
+		%feature("compactdefaultargs") AddVIso;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aFace: BRepAdaptor_Surface
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") AddVIso;
+		static void AddVIso(std::ostream & anOStream, const opencascade::handle<BRepAdaptor_Surface> & aFace, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
 };
 
 
@@ -1235,6 +1515,23 @@ class VrmlConverter_WFDeflectionRestrictedFace {
 ****************************************/
 class VrmlConverter_WFDeflectionShape {
 	public:
+		/****************** Add ******************/
+		/**** md5 signature: 6853d47fdcd987a19eaa45ce2ad05bc1 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aShape: TopoDS_Shape
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, const TopoDS_Shape & aShape, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
 };
 
 
@@ -1249,6 +1546,78 @@ class VrmlConverter_WFDeflectionShape {
 ***************************************/
 class VrmlConverter_WFRestrictedFace {
 	public:
+		/****************** Add ******************/
+		/**** md5 signature: 13df692750a7fcf225b5286ed599cc3e ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aFace: BRepAdaptor_Surface
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, const opencascade::handle<BRepAdaptor_Surface> & aFace, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
+		/****************** Add ******************/
+		/**** md5 signature: b4d3ff4ee1870e7fad0600d75e3d4ecf ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aFace: BRepAdaptor_Surface
+DrawUIso: bool
+DrawVIso: bool
+NBUiso: int
+NBViso: int
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, const opencascade::handle<BRepAdaptor_Surface> & aFace, const Standard_Boolean DrawUIso, const Standard_Boolean DrawVIso, const Standard_Integer NBUiso, const Standard_Integer NBViso, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
+		/****************** AddUIso ******************/
+		/**** md5 signature: 4aee442358ca971c2da6856dad976df1 ****/
+		%feature("compactdefaultargs") AddUIso;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aFace: BRepAdaptor_Surface
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") AddUIso;
+		static void AddUIso(std::ostream & anOStream, const opencascade::handle<BRepAdaptor_Surface> & aFace, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
+		/****************** AddVIso ******************/
+		/**** md5 signature: ef51abaf211cf460780b49e6f72a0132 ****/
+		%feature("compactdefaultargs") AddVIso;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aFace: BRepAdaptor_Surface
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") AddVIso;
+		static void AddVIso(std::ostream & anOStream, const opencascade::handle<BRepAdaptor_Surface> & aFace, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
 };
 
 
@@ -1263,6 +1632,23 @@ class VrmlConverter_WFRestrictedFace {
 ******************************/
 class VrmlConverter_WFShape {
 	public:
+		/****************** Add ******************/
+		/**** md5 signature: 6853d47fdcd987a19eaa45ce2ad05bc1 ****/
+		%feature("compactdefaultargs") Add;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+anOStream: std::ostream
+aShape: TopoDS_Shape
+aDrawer: VrmlConverter_Drawer
+
+Returns
+-------
+None
+") Add;
+		static void Add(std::ostream & anOStream, const TopoDS_Shape & aShape, const opencascade::handle<VrmlConverter_Drawer> & aDrawer);
+
 };
 
 

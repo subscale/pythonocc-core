@@ -1057,14 +1057,21 @@ NbKnots: int
 ") Curves2dShape;
 		void Curves2dShape(Standard_Integer &OutValue, Standard_Integer &OutValue, Standard_Integer &OutValue);
 
+		/****************** Dump ******************/
+		/**** md5 signature: d37b43e0b2386dc096d5d707876db157 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Display information on approximation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+o: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & o);
+
 		/****************** IsDone ******************/
 		/**** md5 signature: ec0624071ec7da54b3d9dacc7bcb05f9 ****/
 		%feature("compactdefaultargs") IsDone;

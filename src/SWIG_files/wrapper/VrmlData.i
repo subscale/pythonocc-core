@@ -464,14 +464,21 @@ opencascade::handle<NCollection_IncAllocator>
 ") Allocator;
 		const opencascade::handle<NCollection_IncAllocator> & Allocator();
 
+		/****************** Dump ******************/
+		/**** md5 signature: c7b7f3310b5193de5f2365d935cd2c95 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "/** * diagnostic dump of the contents */.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+theStream: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & theStream);
+
 		/****************** FindNode ******************/
 		/**** md5 signature: bb943cbcf67db155aea431d31d5e4097 ****/
 		%feature("compactdefaultargs") FindNode;

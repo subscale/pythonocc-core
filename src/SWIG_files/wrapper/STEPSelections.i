@@ -241,14 +241,21 @@ None
 ") STEPSelections_AssemblyExplorer;
 		 STEPSelections_AssemblyExplorer(const Interface_Graph & G);
 
+		/****************** Dump ******************/
+		/**** md5 signature: e60d722f65a7811be636699da7600e78 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+os: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & os);
+
 		/****************** FillListWithGraph ******************/
 		/**** md5 signature: 22e0b69a9c944196630d2867ebc6b70f ****/
 		%feature("compactdefaultargs") FillListWithGraph;

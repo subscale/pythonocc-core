@@ -223,6 +223,28 @@ None
 ") Read;
 		virtual void Read(const TCollection_ExtendedString & theFileName, const opencascade::handle<CDM_Document> & theNewDocument, const opencascade::handle<CDM_Application> & theApplication, const opencascade::handle<PCDM_ReaderFilter> & theFilter = opencascade::handle<PCDM_ReaderFilter>(), const Message_ProgressRange & theRange = Message_ProgressRange());
 
+		/****************** Read ******************/
+		/**** md5 signature: 4a77300577377854b68d84da8ab8bdf0 ****/
+		%feature("compactdefaultargs") Read;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+theIStream: std::istream
+theStorageData: Storage_Data
+theDoc: CDM_Document
+theApplication: CDM_Application
+theFilter: PCDM_ReaderFilter,optional
+	default value is opencascade::handle<PCDM_ReaderFilter>()
+theRange: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Read;
+		virtual void Read(std::istream & theIStream, const opencascade::handle<Storage_Data> & theStorageData, const opencascade::handle<CDM_Document> & theDoc, const opencascade::handle<CDM_Application> & theApplication, const opencascade::handle<PCDM_ReaderFilter> & theFilter = opencascade::handle<PCDM_ReaderFilter>(), const Message_ProgressRange & theRange = Message_ProgressRange());
+
 };
 
 
@@ -286,6 +308,24 @@ Returns
 None
 ") Write;
 		virtual void Write(const opencascade::handle<CDM_Document> & theDocument, const TCollection_ExtendedString & theFileName, const Message_ProgressRange & theRange = Message_ProgressRange());
+
+		/****************** Write ******************/
+		/**** md5 signature: 1593005190d18463c833b2c78ffb13a5 ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+theDocument: CDM_Document
+theOStream: std::ostream
+theRange: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Write;
+		virtual void Write(const opencascade::handle<CDM_Document> & theDocument, std::ostream & theOStream, const Message_ProgressRange & theRange = Message_ProgressRange());
 
 };
 

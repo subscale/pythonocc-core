@@ -5,6 +5,7 @@ from OCC.Core.Standard import *
 from OCC.Core.NCollection import *
 from OCC.Core.TopoDS import *
 from OCC.Core.TopLoc import *
+from OCC.Core.Message import *
 from OCC.Core.TopAbs import *
 from OCC.Core.TCollection import *
 

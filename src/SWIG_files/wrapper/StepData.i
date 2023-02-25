@@ -3577,6 +3577,40 @@ None
 ") StepData_StepDumper;
 		 StepData_StepDumper(const opencascade::handle<StepData_StepModel> & amodel, const opencascade::handle<StepData_Protocol> & protocol, const Standard_Integer mode = 0);
 
+		/****************** Dump ******************/
+		/**** md5 signature: 51a252c8de81ad50ec4845852573a9a5 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps a entity on an messenger. returns true if success, false, if the entity to dump has not been recognized by the protocol. <level> can have one of these values : - 0 : prints the type only, as known in step files (steptype) if <ent> has not been regognized by the protocol, or if its type is complex, the steptype is replaced by the display of the cdl type. complex type are well processed by level 1. - 1 : dumps the entity, completely (whatever it has simple or complex type) but alone. - 2 : dumps the entity completely, plus the item its refers to at first level (a header message designates the starting entity of the dump) <lists shared and implied> - 3 : dumps the entity and its referred items at any levels //! for levels 1,2,3, the numbers displayed (form #nnn) are the numbers of the corresponding entities in the model.
+
+Parameters
+----------
+S: std::ostream
+ent: Standard_Transient
+level: int
+
+Returns
+-------
+bool
+") Dump;
+		Standard_Boolean Dump(std::ostream & S, const opencascade::handle<Standard_Transient> & ent, const Standard_Integer level);
+
+		/****************** Dump ******************/
+		/**** md5 signature: 2c2fad53a5ea53ff96aa2a4598e4e028 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Works as dump with a transient, but directly takes the entity designated by its number in the model returns false, also if <num> is out of range.
+
+Parameters
+----------
+S: std::ostream
+num: int
+level: int
+
+Returns
+-------
+bool
+") Dump;
+		Standard_Boolean Dump(std::ostream & S, const Standard_Integer num, const Standard_Integer level);
+
 		/****************** StepWriter ******************/
 		/**** md5 signature: 96c8201dd445aa612be97bdda77742fe ****/
 		%feature("compactdefaultargs") StepWriter;
@@ -3649,6 +3683,23 @@ Returns
 None
 ") ClearLabels;
 		void ClearLabels();
+
+		/****************** DumpHeader ******************/
+		/**** md5 signature: 56f8df745054635fd7397075063f4387 ****/
+		%feature("compactdefaultargs") DumpHeader;
+		%feature("autodoc", "Dumps the header, with the header protocol of stepdata. if the header protocol is not defined, for each header entity, prints its type. else sends the header under the form of header section of an ascii step file <level> is not used because header is not so big.
+
+Parameters
+----------
+S: std::ostream
+level: int,optional
+	default value is 0
+
+Returns
+-------
+None
+") DumpHeader;
+		void DumpHeader(std::ostream & S, const Standard_Integer level = 0);
 
 		/****************** Entity ******************/
 		/**** md5 signature: 1676edef20e54d8138d1f2a308537826 ****/
@@ -3768,6 +3819,22 @@ Returns
 opencascade::handle<Interface_InterfaceModel>
 ") NewEmptyModel;
 		opencascade::handle<Interface_InterfaceModel> NewEmptyModel();
+
+		/****************** PrintLabel ******************/
+		/**** md5 signature: 70ad5739c870581f6dca5167f0b3bae0 ****/
+		%feature("compactdefaultargs") PrintLabel;
+		%feature("autodoc", "Prints label specific to step norm for a given entity, i.e. if a labelident has been recorded, its value with '#', else the number in the model with '#' and between ().
+
+Parameters
+----------
+ent: Standard_Transient
+S: std::ostream
+
+Returns
+-------
+None
+") PrintLabel;
+		void PrintLabel(const opencascade::handle<Standard_Transient> & ent, std::ostream & S);
 
 		/****************** SetIdentLabel ******************/
 		/**** md5 signature: d8211ff55cd283602d612ccf9779dc4a ****/
@@ -4932,14 +4999,21 @@ None
 ") OpenTypedSub;
 		void OpenTypedSub(const char * subtype);
 
+		/****************** Print ******************/
+		/**** md5 signature: 2eb8b686c42ac7926ce46f27d6e81985 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Writes result on an output defined as an ostream then clears it.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string PrintToString() {
-            std::stringstream s;
-            self->Print(s);
-            return s.str();}
-        };
+Parameters
+----------
+S: std::ostream
+
+Returns
+-------
+bool
+") Print;
+		Standard_Boolean Print(std::ostream & S);
+
 		/****************** Send ******************/
 		/**** md5 signature: 834a80f8fb88341c53a16609c1df2e80 ****/
 		%feature("compactdefaultargs") Send;

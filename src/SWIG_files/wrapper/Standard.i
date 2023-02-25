@@ -706,14 +706,21 @@ bool
 ") IsSame;
 		Standard_Boolean IsSame(const Standard_GUID & uid);
 
+		/****************** ShallowDump ******************/
+		/**** md5 signature: 81ee27b22dec06425d33dc871c4cc32d ****/
+		%feature("compactdefaultargs") ShallowDump;
+		%feature("autodoc", "Display the guid with the following format: //! '00000000-0000-0000-0000-000000000000'.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string ShallowDumpToString() {
-            std::stringstream s;
-            self->ShallowDump(s);
-            return s.str();}
-        };
+Parameters
+----------
+aStream: std::ostream
+
+Returns
+-------
+None
+") ShallowDump;
+		void ShallowDump(std::ostream & aStream);
+
 		/****************** ToCString ******************/
 		/**** md5 signature: bf4dad3d25b8e651de1bf421311dfc4f ****/
 		%feature("compactdefaultargs") ToCString;
@@ -1286,14 +1293,21 @@ opencascade::handle<Standard_Failure>
 ") NewInstance;
 		static opencascade::handle<Standard_Failure> NewInstance(const char * theMessage, const char * theStackTrace);
 
+		/****************** Print ******************/
+		/**** md5 signature: 938e58a4c905f64555b1dcca06400750 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints on the stream @p thestream the exception name followed by the error message. //! note: there is a short-cut @c operator<< (standard_ostream&, opencascade::handle<standard_failure>&).
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string PrintToString() {
-            std::stringstream s;
-            self->Print(s);
-            return s.str();}
-        };
+Parameters
+----------
+theStream: std::ostream
+
+Returns
+-------
+None
+") Print;
+		void Print(std::ostream & theStream);
+
 		/****************** Raise ******************/
 		/**** md5 signature: 91c037d4badacf1008e024b8b4afb779 ****/
 		%feature("compactdefaultargs") Raise;
@@ -1869,14 +1883,21 @@ opencascade::handle<Standard_Type>
 ") Parent;
 		const opencascade::handle<Standard_Type> & Parent();
 
+		/****************** Print ******************/
+		/**** md5 signature: 938e58a4c905f64555b1dcca06400750 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints type (address of descriptor + name) to a stream.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string PrintToString() {
-            std::stringstream s;
-            self->Print(s);
-            return s.str();}
-        };
+Parameters
+----------
+theStream: std::ostream
+
+Returns
+-------
+None
+") Print;
+		void Print(std::ostream & theStream);
+
 		/****************** Register ******************/
 		/**** md5 signature: 8e6b8df94dcb0fc4b1d9d92877cf9314 ****/
 		%feature("compactdefaultargs") Register;

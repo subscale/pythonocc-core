@@ -333,6 +333,26 @@ None
 ") Open;
 		void Open(const opencascade::handle<CDM_Document> & aDocument);
 
+		/****************** Read ******************/
+		/**** md5 signature: fed3647299064218aa4c2d8dceec103f ****/
+		%feature("compactdefaultargs") Read;
+		%feature("autodoc", "Reads thedocument from standard seekable stream theistream, the stream should support seek functionality.
+
+Parameters
+----------
+theIStream: std::istream
+theDocument: CDM_Document
+theFilter: PCDM_ReaderFilter,optional
+	default value is opencascade::handle<PCDM_ReaderFilter>()
+theRange: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Read;
+		void Read(std::istream & theIStream, opencascade::handle<CDM_Document> & theDocument, const opencascade::handle<PCDM_ReaderFilter> & theFilter = opencascade::handle<PCDM_ReaderFilter>(), const Message_ProgressRange & theRange = Message_ProgressRange());
+
 		/****************** ReaderFromFormat ******************/
 		/**** md5 signature: aab6344d555db3220a1fcf7db3c7d59e ****/
 		%feature("compactdefaultargs") ReaderFromFormat;

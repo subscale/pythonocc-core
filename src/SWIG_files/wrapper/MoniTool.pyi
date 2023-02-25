@@ -332,6 +332,7 @@ MoniTool_Stat_Current = MoniTool_Stat.Current
 MoniTool_Timer_ClearTimers = MoniTool_Timer.ClearTimers
 MoniTool_Timer_ComputeAmendments = MoniTool_Timer.ComputeAmendments
 MoniTool_Timer_Dictionary = MoniTool_Timer.Dictionary
+MoniTool_Timer_DumpTimers = MoniTool_Timer.DumpTimers
 MoniTool_Timer_GetAmendments = MoniTool_Timer.GetAmendments
 MoniTool_Timer_Start = MoniTool_Timer.Start
 MoniTool_Timer_Stop = MoniTool_Timer.Stop

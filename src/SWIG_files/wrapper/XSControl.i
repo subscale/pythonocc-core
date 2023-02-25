@@ -884,6 +884,23 @@ None
 ") PrintCheckLoad;
 		void PrintCheckLoad(const Standard_Boolean failsonly, const IFSelect_PrintCount mode);
 
+		/****************** PrintCheckLoad ******************/
+		/**** md5 signature: ca487156a90b4b3b2c6320bc467c731d ****/
+		%feature("compactdefaultargs") PrintCheckLoad;
+		%feature("autodoc", "Prints the check list attached to loaded data.
+
+Parameters
+----------
+theStream: std::ostream
+failsonly: bool
+mode: IFSelect_PrintCount
+
+Returns
+-------
+None
+") PrintCheckLoad;
+		void PrintCheckLoad(std::ostream & theStream, const Standard_Boolean failsonly, const IFSelect_PrintCount mode);
+
 		/****************** PrintCheckTransfer ******************/
 		/**** md5 signature: 6750f68e6aed952f2529ea394507d25f ****/
 		%feature("compactdefaultargs") PrintCheckTransfer;
@@ -899,6 +916,23 @@ Returns
 None
 ") PrintCheckTransfer;
 		void PrintCheckTransfer(const Standard_Boolean failsonly, const IFSelect_PrintCount mode);
+
+		/****************** PrintCheckTransfer ******************/
+		/**** md5 signature: 09d1abfff46e1d492cfc6662fd49988d ****/
+		%feature("compactdefaultargs") PrintCheckTransfer;
+		%feature("autodoc", "Displays check results for the last translation of iges or step entities to open cascade entities.
+
+Parameters
+----------
+theStream: std::ostream
+failsonly: bool
+mode: IFSelect_PrintCount
+
+Returns
+-------
+None
+") PrintCheckTransfer;
+		void PrintCheckTransfer(std::ostream & theStream, const Standard_Boolean failsonly, const IFSelect_PrintCount mode);
 
 		/****************** PrintStatsTransfer ******************/
 		/**** md5 signature: 148fec90ff7b063449e9624a36399cda ****/
@@ -916,6 +950,24 @@ Returns
 None
 ") PrintStatsTransfer;
 		void PrintStatsTransfer(const Standard_Integer what, const Standard_Integer mode = 0);
+
+		/****************** PrintStatsTransfer ******************/
+		/**** md5 signature: fc32c8e9efabbaf8d728d672c3d2b5bb ****/
+		%feature("compactdefaultargs") PrintStatsTransfer;
+		%feature("autodoc", "Displays the statistics for the last translation.
+
+Parameters
+----------
+theStream: std::ostream
+what: int
+mode: int,optional
+	default value is 0
+
+Returns
+-------
+None
+") PrintStatsTransfer;
+		void PrintStatsTransfer(std::ostream & theStream, const Standard_Integer what, const Standard_Integer mode = 0);
 
 		/****************** ReadFile ******************/
 		/**** md5 signature: 0c5675761cd6df0c5f286882695ad872 ****/
@@ -1701,6 +1753,24 @@ Returns
 opencascade::handle<Interface_InterfaceModel>
 ") Model;
 		const opencascade::handle<Interface_InterfaceModel> & Model();
+
+		/****************** PrintStats ******************/
+		/**** md5 signature: 1c7ce9a7eeef2971ad247597c52d38d8 ****/
+		%feature("compactdefaultargs") PrintStats;
+		%feature("autodoc", "Prints statistics on current trace file, according <what> and <mode>. see printstatsprocess for details.
+
+Parameters
+----------
+theStream: std::ostream
+theWhat: int
+theMode: int,optional
+	default value is 0
+
+Returns
+-------
+None
+") PrintStats;
+		void PrintStats(std::ostream & theStream, const Standard_Integer theWhat, const Standard_Integer theMode = 0);
 
 		/****************** PrintStatsOnList ******************/
 		/**** md5 signature: 163b44563c2a8ec32944ebf6b8b54c19 ****/
@@ -3206,6 +3276,23 @@ Returns
 opencascade::handle<XSControl_Controller>
 ") NormAdaptor;
 		const opencascade::handle<XSControl_Controller> & NormAdaptor();
+
+		/****************** PrintTransferStatus ******************/
+		/**** md5 signature: 00bdb09211e1e6bb5ba474ef2dd4ac70 ****/
+		%feature("compactdefaultargs") PrintTransferStatus;
+		%feature("autodoc", "Prints the transfer status of a transferred item, as being the mapped n0 <num>, from mapwriter if <wri> is true, or from mapreader if <wri> is false returns true when done, false else (i.e. num out of range).
+
+Parameters
+----------
+theNum: int
+theWri: bool
+theS: std::ostream
+
+Returns
+-------
+bool
+") PrintTransferStatus;
+		Standard_Boolean PrintTransferStatus(const Standard_Integer theNum, const Standard_Boolean theWri, std::ostream & theS);
 
 		/****************** Result ******************/
 		/**** md5 signature: 648bf58b2605b71bf5b4112cce9715c1 ****/

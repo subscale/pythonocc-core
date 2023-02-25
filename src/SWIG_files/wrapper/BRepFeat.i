@@ -330,6 +330,22 @@ flag: bool
 ") ParametricMinMax;
 		static void ParametricMinMax(const TopoDS_Shape & S, const opencascade::handle<Geom_Curve> & C, Standard_Real &OutValue, Standard_Real &OutValue, Standard_Real &OutValue, Standard_Real &OutValue, Standard_Boolean &OutValue, const Standard_Boolean Ori = Standard_False);
 
+		/****************** Print ******************/
+		/**** md5 signature: a6852c8c0afb9e1a2f070d2ece4eddfa ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints the error description of the state <st> as a string on the stream <s> and returns <s>.
+
+Parameters
+----------
+SE: BRepFeat_StatusError
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const BRepFeat_StatusError SE, std::ostream & S);
+
 		/****************** SampleEdges ******************/
 		/**** md5 signature: f1154ae22c369e9497c31a5a83612489 ****/
 		%feature("compactdefaultargs") SampleEdges;

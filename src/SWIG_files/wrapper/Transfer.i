@@ -1796,6 +1796,22 @@ int
 ") NestingLevel;
 		Standard_Integer NestingLevel();
 
+		/****************** PrintTrace ******************/
+		/**** md5 signature: 0a0a53bc4716a09a519c2ea2a9ac5776 ****/
+		%feature("compactdefaultargs") PrintTrace;
+		%feature("autodoc", "Prints a short information on a starting object. by default prints its dynamic type. can be redefined.
+
+Parameters
+----------
+start: Standard_Transient
+S: std::ostream
+
+Returns
+-------
+None
+") PrintTrace;
+		virtual void PrintTrace(const opencascade::handle<Standard_Transient> & start, std::ostream & S);
+
 		/****************** Rebind ******************/
 		/**** md5 signature: e57d830e06b8d133bb4caf4c620470a2 ****/
 		%feature("compactdefaultargs") Rebind;
@@ -3551,6 +3567,38 @@ int
 ") NextMappedWithAttribute;
 		Standard_Integer NextMappedWithAttribute(const char * name, const Standard_Integer num0);
 
+		/****************** PrintStats ******************/
+		/**** md5 signature: a0a8d2448d0f09b0c479b104db5da053 ****/
+		%feature("compactdefaultargs") PrintStats;
+		%feature("autodoc", "Prints statistics on a given output, according mode.
+
+Parameters
+----------
+mode: int
+S: std::ostream
+
+Returns
+-------
+None
+") PrintStats;
+		void PrintStats(const Standard_Integer mode, std::ostream & S);
+
+		/****************** PrintTrace ******************/
+		/**** md5 signature: 8380d2532e8d3f7819d2298d70b485c1 ****/
+		%feature("compactdefaultargs") PrintTrace;
+		%feature("autodoc", "Specific printing to trace a finder (by its method valuetype).
+
+Parameters
+----------
+start: Transfer_Finder
+S: std::ostream
+
+Returns
+-------
+None
+") PrintTrace;
+		virtual void PrintTrace(const opencascade::handle<Transfer_Finder> & start, std::ostream & S);
+
 		/****************** SetModel ******************/
 		/**** md5 signature: 70328a97cec44e457500ce3b002efc49 ****/
 		%feature("compactdefaultargs") SetModel;
@@ -4368,6 +4416,38 @@ Returns
 opencascade::handle<Interface_InterfaceModel>
 ") Model;
 		opencascade::handle<Interface_InterfaceModel> Model();
+
+		/****************** PrintStats ******************/
+		/**** md5 signature: a0a8d2448d0f09b0c479b104db5da053 ****/
+		%feature("compactdefaultargs") PrintStats;
+		%feature("autodoc", "Prints statistics on a given output, according mode.
+
+Parameters
+----------
+mode: int
+S: std::ostream
+
+Returns
+-------
+None
+") PrintStats;
+		void PrintStats(const Standard_Integer mode, std::ostream & S);
+
+		/****************** PrintTrace ******************/
+		/**** md5 signature: 52ba67cfb212004a5323c79b188c104d ****/
+		%feature("compactdefaultargs") PrintTrace;
+		%feature("autodoc", "Specific printing to trace an entity : prints label and type (if model is set).
+
+Parameters
+----------
+start: Standard_Transient
+S: std::ostream
+
+Returns
+-------
+None
+") PrintTrace;
+		virtual void PrintTrace(const opencascade::handle<Standard_Transient> & start, std::ostream & S);
 
 		/****************** RootsForTransfer ******************/
 		/**** md5 signature: c79152a32ae4b6ec28313285c230ae8b ****/

@@ -44,6 +44,7 @@ https://www.opencascade.com/doc/occt-7.6.0/refman/html/package_geomtools.html"
 #include<NCollection_module.hxx>
 #include<Geom_module.hxx>
 #include<Geom2d_module.hxx>
+#include<Message_module.hxx>
 #include<TColStd_module.hxx>
 #include<TColgp_module.hxx>
 #include<TColgp_module.hxx>
@@ -55,6 +56,7 @@ https://www.opencascade.com/doc/occt-7.6.0/refman/html/package_geomtools.html"
 %import NCollection.i
 %import Geom.i
 %import Geom2d.i
+%import Message.i
 
 %pythoncode {
 from enum import IntEnum
@@ -85,6 +87,69 @@ from OCC.Core.Exception import *
 %rename(geomtools) GeomTools;
 class GeomTools {
 	public:
+		/****************** Dump ******************/
+		/**** md5 signature: 3a6cd44b2ef16268d7f58b9b7270cde3 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "A set of curves from geom2d. dumps the surface on the stream.
+
+Parameters
+----------
+S: Geom_Surface
+OS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		static void Dump(const opencascade::handle<Geom_Surface> & S, std::ostream & OS);
+
+		/****************** Dump ******************/
+		/**** md5 signature: 20c6add2ce10d173c8b9bb0b25454934 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the curve on the stream.
+
+Parameters
+----------
+C: Geom_Curve
+OS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		static void Dump(const opencascade::handle<Geom_Curve> & C, std::ostream & OS);
+
+		/****************** Dump ******************/
+		/**** md5 signature: 9175efaa435a7d1386eb4799ecf3c40c ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the curve on the stream.
+
+Parameters
+----------
+C: Geom2d_Curve
+OS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		static void Dump(const opencascade::handle<Geom2d_Curve> & C, std::ostream & OS);
+
+		/****************** GetReal ******************/
+		/**** md5 signature: c50fd53b89ec2e186f253d0a770a36c5 ****/
+		%feature("compactdefaultargs") GetReal;
+		%feature("autodoc", "Reads the standard_real value from the stream. zero is read in case of error.
+
+Parameters
+----------
+IS: std::istream
+
+Returns
+-------
+theValue: float
+") GetReal;
+		static void GetReal(std::istream & IS, Standard_Real &OutValue);
+
 		/****************** GetUndefinedTypeHandler ******************/
 		/**** md5 signature: 4feeff4a1f6ab5a12fb2effedf9bc1c3 ****/
 		%feature("compactdefaultargs") GetUndefinedTypeHandler;
@@ -95,6 +160,54 @@ Returns
 opencascade::handle<GeomTools_UndefinedTypeHandler>
 ") GetUndefinedTypeHandler;
 		static opencascade::handle<GeomTools_UndefinedTypeHandler> GetUndefinedTypeHandler();
+
+		/****************** Read ******************/
+		/**** md5 signature: 191d80cccc353bbf07985fe0caac76a3 ****/
+		%feature("compactdefaultargs") Read;
+		%feature("autodoc", "Reads the surface from the stream.
+
+Parameters
+----------
+S: Geom_Surface
+IS: std::istream
+
+Returns
+-------
+None
+") Read;
+		static void Read(opencascade::handle<Geom_Surface> & S, std::istream & IS);
+
+		/****************** Read ******************/
+		/**** md5 signature: 43eb96c4a0f249b2667438b2ff88caea ****/
+		%feature("compactdefaultargs") Read;
+		%feature("autodoc", "Reads the curve from the stream.
+
+Parameters
+----------
+C: Geom_Curve
+IS: std::istream
+
+Returns
+-------
+None
+") Read;
+		static void Read(opencascade::handle<Geom_Curve> & C, std::istream & IS);
+
+		/****************** Read ******************/
+		/**** md5 signature: 79ef9bb82a3316be119a2083f299bda0 ****/
+		%feature("compactdefaultargs") Read;
+		%feature("autodoc", "Reads the curve from the stream.
+
+Parameters
+----------
+C: Geom2d_Curve
+IS: std::istream
+
+Returns
+-------
+None
+") Read;
+		static void Read(opencascade::handle<Geom2d_Curve> & C, std::istream & IS);
 
 		/****************** SetUndefinedTypeHandler ******************/
 		/**** md5 signature: 924bb9ac20d7bc97a8eee36d4f9f3c0b ****/
@@ -110,6 +223,54 @@ Returns
 None
 ") SetUndefinedTypeHandler;
 		static void SetUndefinedTypeHandler(const opencascade::handle<GeomTools_UndefinedTypeHandler> & aHandler);
+
+		/****************** Write ******************/
+		/**** md5 signature: b224a56a31c778e86a088ef67369cbeb ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "Writes the surface on the stream.
+
+Parameters
+----------
+S: Geom_Surface
+OS: std::ostream
+
+Returns
+-------
+None
+") Write;
+		static void Write(const opencascade::handle<Geom_Surface> & S, std::ostream & OS);
+
+		/****************** Write ******************/
+		/**** md5 signature: 5fef400262c9232ed45a679c8f37278e ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "Writes the curve on the stream.
+
+Parameters
+----------
+C: Geom_Curve
+OS: std::ostream
+
+Returns
+-------
+None
+") Write;
+		static void Write(const opencascade::handle<Geom_Curve> & C, std::ostream & OS);
+
+		/****************** Write ******************/
+		/**** md5 signature: 1496e488409705f4e06b0e25cc3dde78 ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "Writes the curve on the stream.
+
+Parameters
+----------
+C: Geom2d_Curve
+OS: std::ostream
+
+Returns
+-------
+None
+") Write;
+		static void Write(const opencascade::handle<Geom2d_Curve> & C, std::ostream & OS);
 
 };
 
@@ -177,14 +338,21 @@ opencascade::handle<Geom2d_Curve>
 ") Curve2d;
 		opencascade::handle<Geom2d_Curve> Curve2d(const Standard_Integer I);
 
+		/****************** Dump ******************/
+		/**** md5 signature: e60d722f65a7811be636699da7600e78 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the content of me on the stream <os>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & OS);
+
 		/****************** Index ******************/
 		/**** md5 signature: e1559320ddf80ce0263d324c781a3407 ****/
 		%feature("compactdefaultargs") Index;
@@ -200,28 +368,73 @@ int
 ") Index;
 		Standard_Integer Index(const opencascade::handle<Geom2d_Curve> & C);
 
+		/****************** PrintCurve2d ******************/
+		/**** md5 signature: ffcee85cd663bb79253e2d08e26c9b19 ****/
+		%feature("compactdefaultargs") PrintCurve2d;
+		%feature("autodoc", "Dumps the curve on the stream, if compact is true use the compact format that can be read back.
 
-            %feature("autodoc", "1");
-            %extend{
-                void ReadFromString(std::string src) {
-                std::stringstream s(src);
-                self->Read(s);}
-            };
+Parameters
+----------
+C: Geom2d_Curve
+OS: std::ostream
+compact: bool,optional
+	default value is Standard_False
 
-            %feature("autodoc", "1");
-            %extend{
-                void ReadCurve2dFromString(std::string src) {
-                std::stringstream s(src);
-                self->ReadCurve2d(s);}
-            };
+Returns
+-------
+None
+") PrintCurve2d;
+		static void PrintCurve2d(const opencascade::handle<Geom2d_Curve> & C, std::ostream & OS, const Standard_Boolean compact = Standard_False);
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string WriteToString() {
-            std::stringstream s;
-            self->Write(s);
-            return s.str();}
-        };
+		/****************** Read ******************/
+		/**** md5 signature: e5ce096318e6663d7e9f744e8d66b70b ****/
+		%feature("compactdefaultargs") Read;
+		%feature("autodoc", "Reads the content of me from the stream <is>. me is first cleared.
+
+Parameters
+----------
+IS: std::istream
+theProgress: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Read;
+		void Read(std::istream & IS, const Message_ProgressRange & theProgress = Message_ProgressRange());
+
+		/****************** ReadCurve2d ******************/
+		/**** md5 signature: 5d3b82b1ffef248fe3d83a98f1b80a19 ****/
+		%feature("compactdefaultargs") ReadCurve2d;
+		%feature("autodoc", "Reads the curve from the stream. the curve is assumed to have been written with the print method (compact = true).
+
+Parameters
+----------
+IS: std::istream
+
+Returns
+-------
+opencascade::handle<Geom2d_Curve>
+") ReadCurve2d;
+		static opencascade::handle<Geom2d_Curve> ReadCurve2d(std::istream & IS);
+
+		/****************** Write ******************/
+		/**** md5 signature: 6a95f1af9efa3b2eec48861a606241ee ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "Writes the content of me on the stream <os> in a format that can be read back by read.
+
+Parameters
+----------
+OS: std::ostream
+theProgress: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Write;
+		void Write(std::ostream & OS, const Message_ProgressRange & theProgress = Message_ProgressRange());
+
 };
 
 
@@ -288,14 +501,21 @@ opencascade::handle<Geom_Curve>
 ") Curve;
 		opencascade::handle<Geom_Curve> Curve(const Standard_Integer I);
 
+		/****************** Dump ******************/
+		/**** md5 signature: e60d722f65a7811be636699da7600e78 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the content of me on the stream <os>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & OS);
+
 		/****************** Index ******************/
 		/**** md5 signature: c53cbf4d0efdfb90843e67e9b32c5252 ****/
 		%feature("compactdefaultargs") Index;
@@ -311,28 +531,73 @@ int
 ") Index;
 		Standard_Integer Index(const opencascade::handle<Geom_Curve> & C);
 
+		/****************** PrintCurve ******************/
+		/**** md5 signature: 9cb5308983a4ee0a89defb9c26e1cdb3 ****/
+		%feature("compactdefaultargs") PrintCurve;
+		%feature("autodoc", "Dumps the curve on the stream, if compact is true use the compact format that can be read back.
 
-            %feature("autodoc", "1");
-            %extend{
-                void ReadFromString(std::string src) {
-                std::stringstream s(src);
-                self->Read(s);}
-            };
+Parameters
+----------
+C: Geom_Curve
+OS: std::ostream
+compact: bool,optional
+	default value is Standard_False
 
-            %feature("autodoc", "1");
-            %extend{
-                void ReadCurveFromString(std::string src) {
-                std::stringstream s(src);
-                self->ReadCurve(s);}
-            };
+Returns
+-------
+None
+") PrintCurve;
+		static void PrintCurve(const opencascade::handle<Geom_Curve> & C, std::ostream & OS, const Standard_Boolean compact = Standard_False);
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string WriteToString() {
-            std::stringstream s;
-            self->Write(s);
-            return s.str();}
-        };
+		/****************** Read ******************/
+		/**** md5 signature: e5ce096318e6663d7e9f744e8d66b70b ****/
+		%feature("compactdefaultargs") Read;
+		%feature("autodoc", "Reads the content of me from the stream <is>. me is first cleared.
+
+Parameters
+----------
+IS: std::istream
+theProgress: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Read;
+		void Read(std::istream & IS, const Message_ProgressRange & theProgress = Message_ProgressRange());
+
+		/****************** ReadCurve ******************/
+		/**** md5 signature: 7beb4c6e38ccc7af597e9d8bc17c7088 ****/
+		%feature("compactdefaultargs") ReadCurve;
+		%feature("autodoc", "Reads the curve from the stream. the curve is assumed to have been written with the print method (compact = true).
+
+Parameters
+----------
+IS: std::istream
+
+Returns
+-------
+opencascade::handle<Geom_Curve>
+") ReadCurve;
+		static opencascade::handle<Geom_Curve> ReadCurve(std::istream & IS);
+
+		/****************** Write ******************/
+		/**** md5 signature: 6a95f1af9efa3b2eec48861a606241ee ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "Writes the content of me on the stream <os> in a format that can be read back by read.
+
+Parameters
+----------
+OS: std::ostream
+theProgress: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Write;
+		void Write(std::ostream & OS, const Message_ProgressRange & theProgress = Message_ProgressRange());
+
 };
 
 
@@ -384,14 +649,21 @@ None
 ") Clear;
 		void Clear();
 
+		/****************** Dump ******************/
+		/**** md5 signature: e60d722f65a7811be636699da7600e78 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the content of me on the stream <os>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & OS);
+
 		/****************** Index ******************/
 		/**** md5 signature: 7fc50802d17ebd7c660284e6560fb7f6 ****/
 		%feature("compactdefaultargs") Index;
@@ -407,20 +679,56 @@ int
 ") Index;
 		Standard_Integer Index(const opencascade::handle<Geom_Surface> & S);
 
+		/****************** PrintSurface ******************/
+		/**** md5 signature: f03cd58b0fc54c8e16b1b9c3619b768f ****/
+		%feature("compactdefaultargs") PrintSurface;
+		%feature("autodoc", "Dumps the surface on the stream, if compact is true use the compact format that can be read back.
 
-            %feature("autodoc", "1");
-            %extend{
-                void ReadFromString(std::string src) {
-                std::stringstream s(src);
-                self->Read(s);}
-            };
+Parameters
+----------
+S: Geom_Surface
+OS: std::ostream
+compact: bool,optional
+	default value is Standard_False
 
-            %feature("autodoc", "1");
-            %extend{
-                void ReadSurfaceFromString(std::string src) {
-                std::stringstream s(src);
-                self->ReadSurface(s);}
-            };
+Returns
+-------
+None
+") PrintSurface;
+		static void PrintSurface(const opencascade::handle<Geom_Surface> & S, std::ostream & OS, const Standard_Boolean compact = Standard_False);
+
+		/****************** Read ******************/
+		/**** md5 signature: e5ce096318e6663d7e9f744e8d66b70b ****/
+		%feature("compactdefaultargs") Read;
+		%feature("autodoc", "Reads the content of me from the stream <is>. me is first cleared.
+
+Parameters
+----------
+IS: std::istream
+theProgress: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Read;
+		void Read(std::istream & IS, const Message_ProgressRange & theProgress = Message_ProgressRange());
+
+		/****************** ReadSurface ******************/
+		/**** md5 signature: c678c8ab6d4fb0ee948ec3e0b84c9046 ****/
+		%feature("compactdefaultargs") ReadSurface;
+		%feature("autodoc", "Reads the surface from the stream. the surface is assumed to have been written with the print method (compact = true).
+
+Parameters
+----------
+IS: std::istream
+
+Returns
+-------
+opencascade::handle<Geom_Surface>
+") ReadSurface;
+		static opencascade::handle<Geom_Surface> ReadSurface(std::istream & IS);
+
 		/****************** Surface ******************/
 		/**** md5 signature: f08a9f2a886e0a3933ae15a38f9b8dda ****/
 		%feature("compactdefaultargs") Surface;
@@ -436,14 +744,23 @@ opencascade::handle<Geom_Surface>
 ") Surface;
 		opencascade::handle<Geom_Surface> Surface(const Standard_Integer I);
 
+		/****************** Write ******************/
+		/**** md5 signature: 6a95f1af9efa3b2eec48861a606241ee ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "Writes the content of me on the stream <os> in a format that can be read back by read.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string WriteToString() {
-            std::stringstream s;
-            self->Write(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+theProgress: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Write;
+		void Write(std::ostream & OS, const Message_ProgressRange & theProgress = Message_ProgressRange());
+
 };
 
 
@@ -468,6 +785,111 @@ Returns
 None
 ") GeomTools_UndefinedTypeHandler;
 		 GeomTools_UndefinedTypeHandler();
+
+		/****************** PrintCurve ******************/
+		/**** md5 signature: 9229a0d70724577ea967874667e632bc ****/
+		%feature("compactdefaultargs") PrintCurve;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+C: Geom_Curve
+OS: std::ostream
+compact: bool,optional
+	default value is Standard_False
+
+Returns
+-------
+None
+") PrintCurve;
+		virtual void PrintCurve(const opencascade::handle<Geom_Curve> & C, std::ostream & OS, const Standard_Boolean compact = Standard_False);
+
+		/****************** PrintCurve2d ******************/
+		/**** md5 signature: 7e257c476bf0d68e904e2daed78d6479 ****/
+		%feature("compactdefaultargs") PrintCurve2d;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+C: Geom2d_Curve
+OS: std::ostream
+compact: bool,optional
+	default value is Standard_False
+
+Returns
+-------
+None
+") PrintCurve2d;
+		virtual void PrintCurve2d(const opencascade::handle<Geom2d_Curve> & C, std::ostream & OS, const Standard_Boolean compact = Standard_False);
+
+		/****************** PrintSurface ******************/
+		/**** md5 signature: 6b4c01c323e1d0fad05dea4d7e15f780 ****/
+		%feature("compactdefaultargs") PrintSurface;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+S: Geom_Surface
+OS: std::ostream
+compact: bool,optional
+	default value is Standard_False
+
+Returns
+-------
+None
+") PrintSurface;
+		virtual void PrintSurface(const opencascade::handle<Geom_Surface> & S, std::ostream & OS, const Standard_Boolean compact = Standard_False);
+
+		/****************** ReadCurve ******************/
+		/**** md5 signature: ec4aea4a5365adad6fc1b3ae7538554c ****/
+		%feature("compactdefaultargs") ReadCurve;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+ctype: int
+IS: std::istream
+C: Geom_Curve
+
+Returns
+-------
+std::istream
+") ReadCurve;
+		virtual std::istream & ReadCurve(const Standard_Integer ctype, std::istream & IS, opencascade::handle<Geom_Curve> & C);
+
+		/****************** ReadCurve2d ******************/
+		/**** md5 signature: ad483c9803fa37d94a5a9dad7bf1987d ****/
+		%feature("compactdefaultargs") ReadCurve2d;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+ctype: int
+IS: std::istream
+C: Geom2d_Curve
+
+Returns
+-------
+std::istream
+") ReadCurve2d;
+		virtual std::istream & ReadCurve2d(const Standard_Integer ctype, std::istream & IS, opencascade::handle<Geom2d_Curve> & C);
+
+		/****************** ReadSurface ******************/
+		/**** md5 signature: acd0062fe378bd76a7b522c9793520ec ****/
+		%feature("compactdefaultargs") ReadSurface;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+ctype: int
+IS: std::istream
+S: Geom_Surface
+
+Returns
+-------
+std::istream
+") ReadSurface;
+		virtual std::istream & ReadSurface(const Standard_Integer ctype, std::istream & IS, opencascade::handle<Geom_Surface> & S);
 
 };
 

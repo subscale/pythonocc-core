@@ -1832,22 +1832,36 @@ MoniTool_DataMapOfTimer
 ") Dictionary;
 		static MoniTool_DataMapOfTimer & Dictionary();
 
+		/****************** Dump ******************/
+		/**** md5 signature: ba17251f1205c984d981679cb87ee281 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps current state of a timer shortly (one-line output).
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+ostr: std::ostream
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpTimersToString() {
-            std::stringstream s;
-            self->DumpTimers(s);
-            return s.str();}
-        };
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & ostr);
+
+		/****************** DumpTimers ******************/
+		/**** md5 signature: a163d6e3a2170cc59ce7e312bac33510 ****/
+		%feature("compactdefaultargs") DumpTimers;
+		%feature("autodoc", "Dumps contents of the whole dictionary.
+
+Parameters
+----------
+ostr: std::ostream
+
+Returns
+-------
+None
+") DumpTimers;
+		static void DumpTimers(std::ostream & ostr);
+
 		/****************** GetAmendments ******************/
 		/**** md5 signature: c2be8078ab69a477345c7d01bfe03646 ****/
 		%feature("compactdefaultargs") GetAmendments;
@@ -2468,22 +2482,36 @@ opencascade::handle<Standard_Transient>
 ") ObjectValue;
 		opencascade::handle<Standard_Transient> ObjectValue();
 
+		/****************** Print ******************/
+		/**** md5 signature: d481ea44f76183e17a04f4e32b90f550 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints definition, specification, and actual status and value.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string PrintToString() {
-            std::stringstream s;
-            self->Print(s);
-            return s.str();}
-        };
+Parameters
+----------
+S: std::ostream
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string PrintValueToString() {
-            std::stringstream s;
-            self->PrintValue(s);
-            return s.str();}
-        };
+Returns
+-------
+None
+") Print;
+		virtual void Print(std::ostream & S);
+
+		/****************** PrintValue ******************/
+		/**** md5 signature: a5c0ed204815d55a64ad2d065f7106ab ****/
+		%feature("compactdefaultargs") PrintValue;
+		%feature("autodoc", "Prints only the value.
+
+Parameters
+----------
+S: std::ostream
+
+Returns
+-------
+None
+") PrintValue;
+		void PrintValue(std::ostream & S);
+
 		/****************** RealLimit ******************/
 		/**** md5 signature: 89c72e2e3893a95f4283fcadf76436b4 ****/
 		%feature("compactdefaultargs") RealLimit;

@@ -645,6 +645,23 @@ opencascade::handle<Transfer_FinderProcess>
 		const opencascade::handle<Transfer_FinderProcess> & TransferProcess();
 
 		/****************** Write ******************/
+		/**** md5 signature: 641c31af3cf254e70aab3e12c5732d18 ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "Computes then writes the model to an ostream returns true when done, false in case of error.
+
+Parameters
+----------
+S: std::ostream
+fnes: bool,optional
+	default value is Standard_False
+
+Returns
+-------
+bool
+") Write;
+		Standard_Boolean Write(std::ostream & S, const Standard_Boolean fnes = Standard_False);
+
+		/****************** Write ******************/
 		/**** md5 signature: 336d0511a9ae227341af6444cb65363f ****/
 		%feature("compactdefaultargs") Write;
 		%feature("autodoc", "Prepares and writes an iges model either to an ostream, s or to a file name,cstring. returns true if the operation was performed correctly and false if an error occurred (for instance, if the processor could not create the file).

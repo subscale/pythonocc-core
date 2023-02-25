@@ -191,6 +191,22 @@ opencascade::handle<BinMDF_ADriverTable>
 ") AttributeDrivers;
 		virtual opencascade::handle<BinMDF_ADriverTable> AttributeDrivers(const opencascade::handle<Message_Messenger> & theMsgDriver);
 
+		/****************** CheckShapeSection ******************/
+		/**** md5 signature: 700e6a408d65152684bc7e5f46482651 ****/
+		%feature("compactdefaultargs") CheckShapeSection;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+thePos: Storage_Position
+theIS: std::istream
+
+Returns
+-------
+None
+") CheckShapeSection;
+		virtual void CheckShapeSection(const Storage_Position & thePos, std::istream & theIS);
+
 		/****************** Clear ******************/
 		/**** md5 signature: f671931d03948860d0ead34afbe920aa ****/
 		%feature("compactdefaultargs") Clear;
@@ -217,6 +233,26 @@ Returns
 None
 ") EnableQuickPartReading;
 		virtual void EnableQuickPartReading(const opencascade::handle<Message_Messenger> & theMessageDriver, Standard_Boolean theValue);
+
+		/****************** ReadShapeSection ******************/
+		/**** md5 signature: 7bf07d0fc30fd0c1486d23e896f3c271 ****/
+		%feature("compactdefaultargs") ReadShapeSection;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+theSection: BinLDrivers_DocumentSection
+theIS: std::istream
+isMess: bool,optional
+	default value is Standard_False
+theRange: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") ReadShapeSection;
+		virtual void ReadShapeSection(BinLDrivers_DocumentSection & theSection, std::istream & theIS, const Standard_Boolean isMess = Standard_False, const Message_ProgressRange & theRange = Message_ProgressRange());
 
 };
 
@@ -340,6 +376,25 @@ Returns
 None
 ") SetWithTriangles;
 		void SetWithTriangles(const opencascade::handle<Message_Messenger> & theMessageDriver, const Standard_Boolean theWithTriangulation);
+
+		/****************** WriteShapeSection ******************/
+		/**** md5 signature: 64e554649673659ee22057bde5256cf5 ****/
+		%feature("compactdefaultargs") WriteShapeSection;
+		%feature("autodoc", "Implements the procedure of writing a shape section to file.
+
+Parameters
+----------
+theDocSection: BinLDrivers_DocumentSection
+theOS: std::ostream
+theDocVer: TDocStd_FormatVersion
+theRange: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") WriteShapeSection;
+		virtual void WriteShapeSection(BinLDrivers_DocumentSection & theDocSection, std::ostream & theOS, const TDocStd_FormatVersion theDocVer, const Message_ProgressRange & theRange = Message_ProgressRange());
 
 };
 

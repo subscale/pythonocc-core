@@ -133,14 +133,21 @@ gp_TrsfForm
 ") Form;
 		gp_TrsfForm Form();
 
+		/****************** ShallowDump ******************/
+		/**** md5 signature: becb37fcb2ae0b90bde25605537706e5 ****/
+		%feature("compactdefaultargs") ShallowDump;
+		%feature("autodoc", "Writes the contents of this datum3d to the stream s.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string ShallowDumpToString() {
-            std::stringstream s;
-            self->ShallowDump(s);
-            return s.str();}
-        };
+Parameters
+----------
+S: std::ostream
+
+Returns
+-------
+None
+") ShallowDump;
+		void ShallowDump(std::ostream & S);
+
 		/****************** Transformation ******************/
 		/**** md5 signature: 4340f0c35d6856faf6f9daeca03f9595 ****/
 		%feature("compactdefaultargs") Transformation;
@@ -465,14 +472,21 @@ float
 ") ScalePrec;
 		static Standard_Real ScalePrec();
 
+		/****************** ShallowDump ******************/
+		/**** md5 signature: becb37fcb2ae0b90bde25605537706e5 ****/
+		%feature("compactdefaultargs") ShallowDump;
+		%feature("autodoc", "Prints the contents of <self> on the stream <s>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string ShallowDumpToString() {
-            std::stringstream s;
-            self->ShallowDump(s);
-            return s.str();}
-        };
+Parameters
+----------
+S: std::ostream
+
+Returns
+-------
+None
+") ShallowDump;
+		void ShallowDump(std::ostream & S);
+
 		/****************** Transformation ******************/
 		/**** md5 signature: 567e6ee373139970f4679dbb49e28e7c ****/
 		%feature("compactdefaultargs") Transformation;

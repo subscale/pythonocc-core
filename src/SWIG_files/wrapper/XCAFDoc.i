@@ -484,14 +484,21 @@ None
 ") XCAFDoc_Area;
 		 XCAFDoc_Area();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -1036,14 +1043,21 @@ None
 ") ClearExtraRef;
 		void ClearExtraRef();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 5900f1be94c8ace2c0d3b27c867f6964 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & theOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -1457,14 +1471,21 @@ None
 ") XCAFDoc_Centroid;
 		 XCAFDoc_Centroid();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -4899,14 +4920,21 @@ int
 ") ChildIndex;
 		Standard_Integer ChildIndex(const opencascade::handle<XCAFDoc_GraphNode> & Ch);
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -5863,14 +5891,21 @@ None
 ") XCAFDoc_LengthUnit;
 		 XCAFDoc_LengthUnit();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -6596,14 +6631,21 @@ opencascade::handle<XCAFDoc_ShapeTool>
 %nodefaultctor XCAFDoc_Note;
 class XCAFDoc_Note : public TDF_Attribute {
 	public:
+		/****************** Dump ******************/
+		/**** md5 signature: 5900f1be94c8ace2c0d3b27c867f6964 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & theOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -6999,14 +7041,21 @@ int
 ") DeleteOrphanNotes;
 		Standard_Integer DeleteOrphanNotes();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 5900f1be94c8ace2c0d3b27c867f6964 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & theOS);
+
 		/****************** FindAnnotatedItem ******************/
 		/**** md5 signature: 7e562ae1ec4bb3d6b2a750f4a95ec514 ****/
 		%feature("compactdefaultargs") FindAnnotatedItem;
@@ -7868,14 +7917,37 @@ None
 ") ComputeSimpleShapes;
 		void ComputeSimpleShapes();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 9525c4d4f916b1cfc4b55811ff206921 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+theDumpLog: std::ostream
+deep: bool
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & theDumpLog, const Standard_Boolean deep);
+
+		/****************** Dump ******************/
+		/**** md5 signature: 312419919cb512dd33889a5d722f75a9 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+theDumpLog: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & theDumpLog);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -7884,6 +7956,26 @@ None
                 self->DumpJson(s, depth);
                 return s.str();}
             };
+		/****************** DumpShape ******************/
+		/**** md5 signature: b32ec97d93175bc3ce06699fc7ba1c6b ****/
+		%feature("compactdefaultargs") DumpShape;
+		%feature("autodoc", "Print to std::ostream <thedumplog> type of shape found on <l> label and the entry of <l>, with <level> tabs before. if <deep>, print also tshape and location addresses.
+
+Parameters
+----------
+theDumpLog: std::ostream
+L: TDF_Label
+level: int,optional
+	default value is 0
+deep: bool,optional
+	default value is Standard_False
+
+Returns
+-------
+None
+") DumpShape;
+		static void DumpShape(std::ostream & theDumpLog, const TDF_Label & L, const Standard_Integer level = 0, const Standard_Boolean deep = Standard_False);
+
 		/****************** Expand ******************/
 		/**** md5 signature: 303313cc4599e4d88e82e690ea6d0ec6 ****/
 		%feature("compactdefaultargs") Expand;
@@ -10165,14 +10257,21 @@ None
 ") XCAFDoc_Volume;
 		 XCAFDoc_Volume();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -10298,14 +10397,21 @@ opencascade::handle<TColStd_HArray1OfByte>
 ") Data;
 		const opencascade::handle<TColStd_HArray1OfByte> & Data();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 5900f1be94c8ace2c0d3b27c867f6964 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & theOS);
+
 		/****************** Get ******************/
 		/**** md5 signature: 02af6bbbdbedcc1ca4399ebdbd529b59 ****/
 		%feature("compactdefaultargs") Get;
@@ -10530,14 +10636,21 @@ TCollection_ExtendedString
 ") Comment;
 		const TCollection_ExtendedString & Comment();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 5900f1be94c8ace2c0d3b27c867f6964 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & theOS);
+
 		/****************** Get ******************/
 		/**** md5 signature: 821f268035461249ad0ec3f1760ab2ea ****/
 		%feature("compactdefaultargs") Get;

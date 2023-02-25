@@ -284,6 +284,22 @@ typedef NCollection_Sequence<TopOpeBRep_Point2d> TopOpeBRep_SequenceOfPoint2d;
 %rename(topopebrep) TopOpeBRep;
 class TopOpeBRep {
 	public:
+		/****************** Print ******************/
+		/**** md5 signature: 298bc80cbe2b2fc0f4814ac9efa8edb6 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints the name of <tlc> as a string on the stream <s> and returns <s>.
+
+Parameters
+----------
+TLC: TopOpeBRep_TypeLineCurve
+OS: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TopOpeBRep_TypeLineCurve TLC, std::ostream & OS);
+
 };
 
 
@@ -3197,14 +3213,21 @@ None
 ") DumpBipoint;
 		void DumpBipoint(const TopOpeBRep_Bipoint & B, const TCollection_AsciiString & s1, const TCollection_AsciiString & s2);
 
+		/****************** DumpLineTransitions ******************/
+		/**** md5 signature: edfe93f308df46bfc812b4b00425d99c ****/
+		%feature("compactdefaultargs") DumpLineTransitions;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpLineTransitionsToString() {
-            std::stringstream s;
-            self->DumpLineTransitions(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+std::ostream
+") DumpLineTransitions;
+		std::ostream & DumpLineTransitions(std::ostream & OS);
+
 		/****************** DumpType ******************/
 		/**** md5 signature: b34c01a6723403b4978ae19d96842616 ****/
 		%feature("compactdefaultargs") DumpType;
@@ -4758,14 +4781,21 @@ TopoDS_Shape
 ") Current;
 		const TopoDS_Shape Current();
 
+		/****************** DumpCurrent ******************/
+		/**** md5 signature: 2cfbfd895f7349c098bf212a528228ac ****/
+		%feature("compactdefaultargs") DumpCurrent;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpCurrentToString() {
-            std::stringstream s;
-            self->DumpCurrent(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+std::ostream
+") DumpCurrent;
+		std::ostream & DumpCurrent(std::ostream & OS);
+
 		/****************** Index ******************/
 		/**** md5 signature: 407d80ef3037d55996765198adea3908 ****/
 		%feature("compactdefaultargs") Index;
@@ -4890,6 +4920,40 @@ Returns
 None
 ") ChangeKeep;
 		void ChangeKeep(const Standard_Boolean keep);
+
+		/****************** Dump ******************/
+		/**** md5 signature: 5579594f426ee060a7dba148d700be11 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+I: int
+F: TopoDS_Face
+OS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(const Standard_Integer I, const TopoDS_Face & F, std::ostream & OS);
+
+		/****************** Dump ******************/
+		/**** md5 signature: 1f8e051df2589ec6a071609bf7470fc1 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+F1: TopoDS_Face
+F2: TopoDS_Face
+OS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(const TopoDS_Face & F1, const TopoDS_Face & F2, std::ostream & OS);
 
 		/****************** Edge ******************/
 		/**** md5 signature: 69a02b36daf6e7cb7791cc5ef6d9ffd2 ****/

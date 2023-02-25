@@ -2773,14 +2773,37 @@ None
 ") ClearMetrics;
 		void ClearMetrics();
 
+		/****************** Dump ******************/
+		/**** md5 signature: c086355fe494bcbcf3ea9cc5c4ebee71 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps all collected alerts to stream.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & theOS);
+
+		/****************** Dump ******************/
+		/**** md5 signature: d701e8989524635f96b7e9629956e021 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps collected alerts with specified gravity to stream.
+
+Parameters
+----------
+theOS: std::ostream
+theGravity: Message_Gravity
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & theOS, Message_Gravity theGravity);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -3511,9 +3534,27 @@ None
 
 Returns
 -------
-Standard_OStream
+std::ostream
 ") GetStream;
-		Standard_OStream & GetStream();
+		std::ostream & GetStream();
+
+		/****************** SetConsoleTextColor ******************/
+		/**** md5 signature: 1e71fea88218cee7455b23d16ccf2510 ****/
+		%feature("compactdefaultargs") SetConsoleTextColor;
+		%feature("autodoc", "Setup console text color. //! on windows, this would affect active terminal color output. on other systems, this would put special terminal codes; the terminal should support these codes or them will appear in text otherwise. the same will happen when stream is redirected into text file. //! beware that within multi-threaded environment inducing console colors might lead to colored text mixture due to concurrency.
+
+Parameters
+----------
+theOStream: std::ostream *
+theTextColor: Message_ConsoleColor
+theIsIntenseText: bool,optional
+	default value is false
+
+Returns
+-------
+None
+") SetConsoleTextColor;
+		static void SetConsoleTextColor(std::ostream * theOStream, Message_ConsoleColor theTextColor, bool theIsIntenseText = false);
 
 		/****************** SetToColorize ******************/
 		/**** md5 signature: b4f903af5677d00a1f393de87002a6a5 ****/

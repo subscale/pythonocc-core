@@ -396,6 +396,7 @@ TObj_Model_SetNewName = TObj_Model.SetNewName
 TObj_Object_Detach = TObj_Object.Detach
 TObj_Object_GetObj = TObj_Object.GetObj
 TObj_Persistence_CreateNewObject = TObj_Persistence.CreateNewObject
+TObj_Persistence_DumpTypes = TObj_Persistence.DumpTypes
 TObj_TIntSparseArray_GetID = TObj_TIntSparseArray.GetID
 TObj_TIntSparseArray_Set = TObj_TIntSparseArray.Set
 TObj_TModel_GetID = TObj_TModel.GetID

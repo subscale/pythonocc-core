@@ -550,14 +550,21 @@ opencascade::handle<TDF_DeltaOnResume>
 ") DeltaOnResume;
 		virtual opencascade::handle<TDF_DeltaOnResume> DeltaOnResume();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 87047991ca121f6cb65c2957eca41f1b ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the minimum information about <self> on <astream>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -566,6 +573,23 @@ opencascade::handle<TDF_DeltaOnResume>
                 self->DumpJson(s, depth);
                 return s.str();}
             };
+		/****************** ExtendedDump ******************/
+		/**** md5 signature: 2d076f5290434752ed1effb636fb5839 ****/
+		%feature("compactdefaultargs") ExtendedDump;
+		%feature("autodoc", "Dumps the attribute content on <astream>, using <amap> like this: if an attribute is not in the map, first put add it to the map and then dump it. use the map rank instead of dumping each attribute field.
+
+Parameters
+----------
+anOS: std::ostream
+aFilter: TDF_IDFilter
+aMap: TDF_AttributeIndexedMap
+
+Returns
+-------
+None
+") ExtendedDump;
+		virtual void ExtendedDump(std::ostream & anOS, const TDF_IDFilter & aFilter, TDF_AttributeIndexedMap & aMap);
+
 		/****************** FindAttribute ******************/
 		/**** md5 signature: 5f4fd12b74a27c4216127d1ce8d3b78a ****/
 		%feature("compactdefaultargs") FindAttribute;
@@ -853,14 +877,21 @@ opencascade::handle<TDF_Attribute>
 ") Attribute;
 		opencascade::handle<TDF_Attribute> Attribute();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 99b366a47dee674026948ac42a91f968 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the contents.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & OS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -1729,14 +1760,21 @@ None
 ") Destroy;
 		void Destroy();
 
+		/****************** Dump ******************/
+		/**** md5 signature: cfe815398c9c4191063c65e53f786693 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the data on <astream>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -2024,14 +2062,21 @@ bool
 ") ContainsLabel;
 		Standard_Boolean ContainsLabel(const TDF_Label & aLabel);
 
+		/****************** Dump ******************/
+		/**** md5 signature: cfe815398c9c4191063c65e53f786693 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the minimum information about <self> on <astream>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & anOS);
+
 		/****************** IsEmpty ******************/
 		/**** md5 signature: 6ab5e1ad63f93168856ab126dd374b81 ****/
 		%feature("compactdefaultargs") IsEmpty;
@@ -2114,14 +2159,21 @@ int
 ") BeginTime;
 		Standard_Integer BeginTime();
 
+		/****************** Dump ******************/
+		/**** md5 signature: e60d722f65a7811be636699da7600e78 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & OS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -2273,14 +2325,21 @@ None
 ") Copy;
 		void Copy(const TDF_IDFilter & fromFilter);
 
+		/****************** Dump ******************/
+		/**** md5 signature: 43df1fb908adbf242957532375689066 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Writes the contents of <self> to <os>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & anOS);
+
 		/****************** IDList ******************/
 		/**** md5 signature: 51f584875347d58754d482e26d1410b6 ****/
 		%feature("compactdefaultargs") IDList;
@@ -2517,22 +2576,53 @@ int
 ") Depth;
 		Standard_Integer Depth();
 
+		/****************** Dump ******************/
+		/**** md5 signature: cfe815398c9c4191063c65e53f786693 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the minimum information about <self> on <astream>.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string EntryDumpToString() {
-            std::stringstream s;
-            self->EntryDump(s);
-            return s.str();}
-        };
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & anOS);
+
+		/****************** EntryDump ******************/
+		/**** md5 signature: b1831f922bafdab54839dc202c26f4f7 ****/
+		%feature("compactdefaultargs") EntryDump;
+		%feature("autodoc", "Dumps the label entry.
+
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+None
+") EntryDump;
+		void EntryDump(std::ostream & anOS);
+
+		/****************** ExtendedDump ******************/
+		/**** md5 signature: af33a4abcb3b7b5ccf7bc889f69d60fb ****/
+		%feature("compactdefaultargs") ExtendedDump;
+		%feature("autodoc", "Dumps the label on <astream> and its attributes rank in <amap> if their ids are kept by <idfilter>.
+
+Parameters
+----------
+anOS: std::ostream
+aFilter: TDF_IDFilter
+aMap: TDF_AttributeIndexedMap
+
+Returns
+-------
+None
+") ExtendedDump;
+		void ExtendedDump(std::ostream & anOS, const TDF_IDFilter & aFilter, TDF_AttributeIndexedMap & aMap);
+
 		/****************** Father ******************/
 		/**** md5 signature: a0f1cf18875c9b067fe3f49cfc73a13d ****/
 		%feature("compactdefaultargs") Father;
@@ -3071,6 +3161,24 @@ None
 ") Clear;
 		void Clear();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 2a7064c79887abf6a938c73a57576fd9 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Dumps the relocation table.
+
+Parameters
+----------
+dumpLabels: bool
+dumpAttributes: bool
+dumpTransients: bool
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(const Standard_Boolean dumpLabels, const Standard_Boolean dumpAttributes, const Standard_Boolean dumpTransients, std::ostream & anOS);
+
 		/****************** HasRelocation ******************/
 		/**** md5 signature: a28d159840ab7cb08cc986078d0af75d ****/
 		%feature("compactdefaultargs") HasRelocation;
@@ -3293,6 +3401,38 @@ None
 ") DeductLabels;
 		static void DeductLabels(TDF_LabelList & aLabelList, TDF_LabelIntegerMap & aLabelMap);
 
+		/****************** DeepDump ******************/
+		/**** md5 signature: 0865990b45a67afdb1d24c85517acea1 ****/
+		%feature("compactdefaultargs") DeepDump;
+		%feature("autodoc", "Dumps <adf> and its labels and their attributes.
+
+Parameters
+----------
+anOS: std::ostream
+aDF: TDF_Data
+
+Returns
+-------
+None
+") DeepDump;
+		static void DeepDump(std::ostream & anOS, const opencascade::handle<TDF_Data> & aDF);
+
+		/****************** DeepDump ******************/
+		/**** md5 signature: e4b5cb2df81a0376aea19a2db84fdb98 ****/
+		%feature("compactdefaultargs") DeepDump;
+		%feature("autodoc", "Dumps <alabel>, its children and their attributes.
+
+Parameters
+----------
+anOS: std::ostream
+aLabel: TDF_Label
+
+Returns
+-------
+None
+") DeepDump;
+		static void DeepDump(std::ostream & anOS, const TDF_Label & aLabel);
+
 		/****************** Entry ******************/
 		/**** md5 signature: 5846182a2901126a6abbd7b994d69204 ****/
 		%feature("compactdefaultargs") Entry;
@@ -3308,6 +3448,40 @@ Returns
 None
 ") Entry;
 		static void Entry(const TDF_Label & aLabel, TCollection_AsciiString & anEntry);
+
+		/****************** ExtendedDeepDump ******************/
+		/**** md5 signature: 0090a78df835b64f97d365e375094233 ****/
+		%feature("compactdefaultargs") ExtendedDeepDump;
+		%feature("autodoc", "Dumps <adf> and its labels and their attributes, if their ids are kept by <afilter>. dumps also the attributes content.
+
+Parameters
+----------
+anOS: std::ostream
+aDF: TDF_Data
+aFilter: TDF_IDFilter
+
+Returns
+-------
+None
+") ExtendedDeepDump;
+		static void ExtendedDeepDump(std::ostream & anOS, const opencascade::handle<TDF_Data> & aDF, const TDF_IDFilter & aFilter);
+
+		/****************** ExtendedDeepDump ******************/
+		/**** md5 signature: ad0131438f9321268f1740e7da980209 ****/
+		%feature("compactdefaultargs") ExtendedDeepDump;
+		%feature("autodoc", "Dumps <alabel>, its children and their attributes, if their ids are kept by <afilter>. dumps also the attributes content.
+
+Parameters
+----------
+anOS: std::ostream
+aLabel: TDF_Label
+aFilter: TDF_IDFilter
+
+Returns
+-------
+None
+") ExtendedDeepDump;
+		static void ExtendedDeepDump(std::ostream & anOS, const TDF_Label & aLabel, const TDF_IDFilter & aFilter);
 
 		/****************** IsSelfContained ******************/
 		/**** md5 signature: 022b907b8de1841e61e891cd408215cc ****/
@@ -3919,14 +4093,21 @@ None
 ") TDF_Reference;
 		 TDF_Reference();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{

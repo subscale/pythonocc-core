@@ -971,6 +971,7 @@ TopOpeBRepBuild_Builder_StringState = TopOpeBRepBuild_Builder.StringState
 TopOpeBRepBuild_Builder_TopType = TopOpeBRepBuild_Builder.TopType
 TopOpeBRepBuild_CorrectFace2d_CheckList = TopOpeBRepBuild_CorrectFace2d.CheckList
 TopOpeBRepBuild_CorrectFace2d_GetP2dFL = TopOpeBRepBuild_CorrectFace2d.GetP2dFL
+TopOpeBRepBuild_GTool_Dump = TopOpeBRepBuild_GTool.Dump
 TopOpeBRepBuild_GTool_GComDiff = TopOpeBRepBuild_GTool.GComDiff
 TopOpeBRepBuild_GTool_GComSame = TopOpeBRepBuild_GTool.GComSame
 TopOpeBRepBuild_GTool_GComUnsh = TopOpeBRepBuild_GTool.GComUnsh

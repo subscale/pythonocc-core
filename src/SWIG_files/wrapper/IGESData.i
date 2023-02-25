@@ -2533,6 +2533,74 @@ None
 ") IGESData_IGESDumper;
 		 IGESData_IGESDumper(const opencascade::handle<IGESData_IGESModel> & model, const opencascade::handle<IGESData_Protocol> & protocol);
 
+		/****************** Dump ******************/
+		/**** md5 signature: c347dc756919bc04f1eac57ddbe6e2a8 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+ent: IGESData_IGESEntity
+S: std::ostream
+own: int
+attached: int,optional
+	default value is -1
+
+Returns
+-------
+None
+") Dump;
+		void Dump(const opencascade::handle<IGESData_IGESEntity> & ent, std::ostream & S, const Standard_Integer own, const Standard_Integer attached = -1);
+
+		/****************** OwnDump ******************/
+		/**** md5 signature: 3235d2f595b46c51344158ad01916bf5 ****/
+		%feature("compactdefaultargs") OwnDump;
+		%feature("autodoc", "Specific dump for each iges entity, call by dump (just above) <own> is the parameter <own> from dump.
+
+Parameters
+----------
+ent: IGESData_IGESEntity
+S: std::ostream
+own: int
+
+Returns
+-------
+None
+") OwnDump;
+		void OwnDump(const opencascade::handle<IGESData_IGESEntity> & ent, std::ostream & S, const Standard_Integer own);
+
+		/****************** PrintDNum ******************/
+		/**** md5 signature: 843ade9a40f705735dc483822de7ae21 ****/
+		%feature("compactdefaultargs") PrintDNum;
+		%feature("autodoc", "Prints onto an output, the 'number of directory entry' which corresponds to an igesentity in the igesmodel, under the form 'd#nnn' (a null handle gives d#0).
+
+Parameters
+----------
+ent: IGESData_IGESEntity
+S: std::ostream
+
+Returns
+-------
+None
+") PrintDNum;
+		void PrintDNum(const opencascade::handle<IGESData_IGESEntity> & ent, std::ostream & S);
+
+		/****************** PrintShort ******************/
+		/**** md5 signature: 70b65854c8626a1ea0446479ed6c8a1a ****/
+		%feature("compactdefaultargs") PrintShort;
+		%feature("autodoc", "Prints onto an output, the 'number of directory entry' (see printdnum) plus iges type and form numbers, which gives 'd#nnn type nnn form nnn'.
+
+Parameters
+----------
+ent: IGESData_IGESEntity
+S: std::ostream
+
+Returns
+-------
+None
+") PrintShort;
+		void PrintShort(const opencascade::handle<IGESData_IGESEntity> & ent, std::ostream & S);
+
 };
 
 
@@ -3481,6 +3549,23 @@ int
 ") DNum;
 		Standard_Integer DNum(const opencascade::handle<IGESData_IGESEntity> & ent);
 
+		/****************** DumpHeader ******************/
+		/**** md5 signature: 56f8df745054635fd7397075063f4387 ****/
+		%feature("compactdefaultargs") DumpHeader;
+		%feature("autodoc", "Prints the iges file header (start and global sections) to the log file. the integer parameter is intended to be used as a level indicator but is not used at present.
+
+Parameters
+----------
+S: std::ostream
+level: int,optional
+	default value is 0
+
+Returns
+-------
+None
+") DumpHeader;
+		void DumpHeader(std::ostream & S, const Standard_Integer level = 0);
+
 		/****************** Entity ******************/
 		/**** md5 signature: 9ad99fc403d738612d5a7261abb4e74e ****/
 		%feature("compactdefaultargs") Entity;
@@ -3543,6 +3628,54 @@ Returns
 opencascade::handle<Interface_InterfaceModel>
 ") NewEmptyModel;
 		opencascade::handle<Interface_InterfaceModel> NewEmptyModel();
+
+		/****************** PrintInfo ******************/
+		/**** md5 signature: 048e00e2b50d28afc8b7b531cd4b786a ****/
+		%feature("compactdefaultargs") PrintInfo;
+		%feature("autodoc", "Prints label specific to iges norm for a given entity, i.e. its directory entry number (2*number-1).
+
+Parameters
+----------
+ent: Standard_Transient
+S: std::ostream
+
+Returns
+-------
+None
+") PrintInfo;
+		void PrintInfo(const opencascade::handle<Standard_Transient> & ent, std::ostream & S);
+
+		/****************** PrintLabel ******************/
+		/**** md5 signature: 70ad5739c870581f6dca5167f0b3bae0 ****/
+		%feature("compactdefaultargs") PrintLabel;
+		%feature("autodoc", "Prints label specific to iges norm for a given entity, i.e. its directory entry number (2*number-1).
+
+Parameters
+----------
+ent: Standard_Transient
+S: std::ostream
+
+Returns
+-------
+None
+") PrintLabel;
+		void PrintLabel(const opencascade::handle<Standard_Transient> & ent, std::ostream & S);
+
+		/****************** PrintToLog ******************/
+		/**** md5 signature: 0993bb95706cbffcda2c98453ed6b557 ****/
+		%feature("compactdefaultargs") PrintToLog;
+		%feature("autodoc", "Prints label specific to iges norm for a given -- -- entity, i.e. its directory entry number (2*number-1) in the log file format.
+
+Parameters
+----------
+ent: Standard_Transient
+S: std::ostream
+
+Returns
+-------
+None
+") PrintToLog;
+		virtual void PrintToLog(const opencascade::handle<Standard_Transient> & ent, std::ostream & S);
 
 		/****************** SetGlobalSection ******************/
 		/**** md5 signature: 1af9179d630020de23e87e44cbffad84 ****/
@@ -4323,14 +4456,21 @@ None
 ") OwnParams;
 		void OwnParams(const opencascade::handle<IGESData_IGESEntity> & anent);
 
+		/****************** Print ******************/
+		/**** md5 signature: 5e5b127c01c68c6fb6a747c286a95265 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Writes result on an output defined as an ostream resolves stored infos at this time; in particular, numbers of lines used to address p-section from d-section and final totals takes writemode into account.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string PrintToString() {
-            std::stringstream s;
-            self->Print(s);
-            return s.str();}
-        };
+Parameters
+----------
+S: std::ostream
+
+Returns
+-------
+bool
+") Print;
+		Standard_Boolean Print(std::ostream & S);
+
 		/****************** Properties ******************/
 		/**** md5 signature: 593129876ee8c43cc811cf1423c82b5d ****/
 		%feature("compactdefaultargs") Properties;
@@ -6143,6 +6283,25 @@ bool
 ") OwnCorrect;
 		virtual Standard_Boolean OwnCorrect(const Standard_Integer CN, const opencascade::handle<IGESData_IGESEntity> & ent);
 
+		/****************** OwnDump ******************/
+		/**** md5 signature: f276487f02d27b508cdd766536f98d29 ****/
+		%feature("compactdefaultargs") OwnDump;
+		%feature("autodoc", "Specific dump for each type of iges entity : it concerns only own parameters, the general data (directory part, lists) are taken into account by the igesdumper see class igesdumper for the rules to follow for <own> and <attached> level.
+
+Parameters
+----------
+CN: int
+ent: IGESData_IGESEntity
+dumper: IGESData_IGESDumper
+S: std::ostream
+own: int
+
+Returns
+-------
+None
+") OwnDump;
+		virtual void OwnDump(const Standard_Integer CN, const opencascade::handle<IGESData_IGESEntity> & ent, const IGESData_IGESDumper & dumper, std::ostream & S, const Standard_Integer own);
+
 };
 
 
@@ -6766,6 +6925,25 @@ Returns
 None
 ") IGESData_DefaultSpecific;
 		 IGESData_DefaultSpecific();
+
+		/****************** OwnDump ******************/
+		/**** md5 signature: 97551005b4180a704e712d2024f870d6 ****/
+		%feature("compactdefaultargs") OwnDump;
+		%feature("autodoc", "Specific dump for undefinedentity : it concerns only own parameters, the general data (directory part, lists) are taken into account by the igesdumper.
+
+Parameters
+----------
+CN: int
+ent: IGESData_IGESEntity
+dumper: IGESData_IGESDumper
+S: std::ostream
+own: int
+
+Returns
+-------
+None
+") OwnDump;
+		void OwnDump(const Standard_Integer CN, const opencascade::handle<IGESData_IGESEntity> & ent, const IGESData_IGESDumper & dumper, std::ostream & S, const Standard_Integer own);
 
 };
 

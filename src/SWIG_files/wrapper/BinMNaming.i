@@ -257,13 +257,23 @@ None
 ") Paste;
 		void Paste(const opencascade::handle<TDF_Attribute> & Source, BinObjMgt_Persistent & Target, BinObjMgt_SRelocationTable & RelocTable);
 
+		/****************** ReadShapeSection ******************/
+		/**** md5 signature: 66ff232ed5a17a346bcdcc9d0bc2b9ce ****/
+		%feature("compactdefaultargs") ReadShapeSection;
+		%feature("autodoc", "Input the shapes from bin document file.
 
-            %feature("autodoc", "1");
-            %extend{
-                void ReadShapeSectionFromString(std::string src) {
-                std::stringstream s(src);
-                self->ReadShapeSection(s);}
-            };
+Parameters
+----------
+theIS: std::istream
+therange: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") ReadShapeSection;
+		void ReadShapeSection(std::istream & theIS, const Message_ProgressRange & therange = Message_ProgressRange());
+
 		/****************** SetWithNormals ******************/
 		/**** md5 signature: 2f7757cd59d0573f368c1b217c28b7f5 ****/
 		%feature("compactdefaultargs") SetWithNormals;
@@ -308,6 +318,24 @@ Returns
 BinTools_ShapeSetBase *
 ") ShapeSet;
 		BinTools_ShapeSetBase * ShapeSet(const Standard_Boolean theReading);
+
+		/****************** WriteShapeSection ******************/
+		/**** md5 signature: 257dfbc6e624d2b0bb9fa1de0712dd47 ****/
+		%feature("compactdefaultargs") WriteShapeSection;
+		%feature("autodoc", "Output the shapes into bin document file.
+
+Parameters
+----------
+theOS: std::ostream
+theDocVer: int
+therange: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") WriteShapeSection;
+		void WriteShapeSection(std::ostream & theOS, const Standard_Integer theDocVer, const Message_ProgressRange & therange = Message_ProgressRange());
 
 };
 

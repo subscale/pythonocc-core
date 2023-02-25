@@ -559,22 +559,36 @@ None
 ") ClearWarnings;
 		void ClearWarnings();
 
+		/****************** DumpErrors ******************/
+		/**** md5 signature: 90a98b1a0d228edd0b78f11fc13715d9 ****/
+		%feature("compactdefaultargs") DumpErrors;
+		%feature("autodoc", "Dumps the error status into the given stream.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpErrorsToString() {
-            std::stringstream s;
-            self->DumpErrors(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOS: std::ostream
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpWarningsToString() {
-            std::stringstream s;
-            self->DumpWarnings(s);
-            return s.str();}
-        };
+Returns
+-------
+None
+") DumpErrors;
+		void DumpErrors(std::ostream & theOS);
+
+		/****************** DumpWarnings ******************/
+		/**** md5 signature: b7a54acbfda1ad785ffbd552beb749fd ****/
+		%feature("compactdefaultargs") DumpWarnings;
+		%feature("autodoc", "Dumps the warning statuses into the given stream.
+
+Parameters
+----------
+theOS: std::ostream
+
+Returns
+-------
+None
+") DumpWarnings;
+		void DumpWarnings(std::ostream & theOS);
+
 		/****************** FuzzyValue ******************/
 		/**** md5 signature: c7081d612ee5325e18733e215807d19f ****/
 		%feature("compactdefaultargs") FuzzyValue;

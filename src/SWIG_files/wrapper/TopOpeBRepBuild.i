@@ -4469,14 +4469,21 @@ None
 ") Current;
 		void Current(TopAbs_State & s1, TopAbs_State & s2);
 
+		/****************** Dump ******************/
+		/**** md5 signature: e60d722f65a7811be636699da7600e78 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & OS);
+
 		/****************** Init ******************/
 		/**** md5 signature: 0de93ef32c53d091768788dca0e281fd ****/
 		%feature("compactdefaultargs") Init;
@@ -4539,14 +4546,21 @@ None
 ******************************/
 class TopOpeBRepBuild_GTool {
 	public:
+		/****************** Dump ******************/
+		/**** md5 signature: 7ac13aaed5b6d1996e76f06146a4af9d ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		static void Dump(std::ostream & OS);
+
 		/****************** GComDiff ******************/
 		/**** md5 signature: 728073c8bdab2220cb285e5911b15d15 ****/
 		%feature("compactdefaultargs") GComDiff;
@@ -4842,14 +4856,73 @@ TopOpeBRepBuild_GTopo
 ") CopyPermuted;
 		TopOpeBRepBuild_GTopo CopyPermuted();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 8c9af92dbb883764baa3ebb3e5b82f7c ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpTypeToString() {
-            std::stringstream s;
-            self->DumpType(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+s: Standard_Address,optional
+	default value is NULL
+
+Returns
+-------
+None
+") Dump;
+		virtual void Dump(std::ostream & OS, const Standard_Address s = NULL);
+
+		/****************** DumpSSB ******************/
+		/**** md5 signature: f191eecc210b5827d05e7cd4594ead98 ****/
+		%feature("compactdefaultargs") DumpSSB;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+OS: std::ostream
+s1: TopAbs_State
+s2: TopAbs_State
+b: bool
+
+Returns
+-------
+None
+") DumpSSB;
+		static void DumpSSB(std::ostream & OS, const TopAbs_State s1, const TopAbs_State s2, const Standard_Boolean b);
+
+		/****************** DumpType ******************/
+		/**** md5 signature: 958d66f716a6ca18d4ec9ac299b310e2 ****/
+		%feature("compactdefaultargs") DumpType;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+None
+") DumpType;
+		void DumpType(std::ostream & OS);
+
+		/****************** DumpVal ******************/
+		/**** md5 signature: 8a87e48d25d7176e71c93b30dca770f3 ****/
+		%feature("compactdefaultargs") DumpVal;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+OS: std::ostream
+s1: TopAbs_State
+s2: TopAbs_State
+
+Returns
+-------
+None
+") DumpVal;
+		void DumpVal(std::ostream & OS, const TopAbs_State s1, const TopAbs_State s2);
+
 		/****************** GIndex ******************/
 		/**** md5 signature: 139dc2b2cf616d5e5205293f4637e677 ****/
 		%feature("compactdefaultargs") GIndex;
@@ -6061,6 +6134,40 @@ Returns
 None
 ") DumpBB;
 		virtual void DumpBB();
+
+		/****************** DumpCheck ******************/
+		/**** md5 signature: a08a701cbae28cab87a77d32a92880ac ****/
+		%feature("compactdefaultargs") DumpCheck;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+OS: std::ostream
+str: TCollection_AsciiString
+S: TopoDS_Shape
+chk: bool
+
+Returns
+-------
+None
+") DumpCheck;
+		void DumpCheck(std::ostream & OS, const TCollection_AsciiString & str, const TopoDS_Shape & S, const Standard_Boolean chk);
+
+		/****************** DumpName ******************/
+		/**** md5 signature: e73ae5ec230cf0b21dee0ddf6cc25888 ****/
+		%feature("compactdefaultargs") DumpName;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+OS: std::ostream
+str: TCollection_AsciiString
+
+Returns
+-------
+None
+") DumpName;
+		void DumpName(std::ostream & OS, const TCollection_AsciiString & str);
 
 		/****************** DumpSS ******************/
 		/**** md5 signature: cdc9acb51bec94239bc4daf1ba078420 ****/

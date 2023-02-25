@@ -311,14 +311,21 @@ None
 ") Clear;
 		void Clear();
 
+		/****************** Dump ******************/
+		/**** md5 signature: cfe815398c9c4191063c65e53f786693 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & anOS);
+
 		/****************** FindDriver ******************/
 		/**** md5 signature: 40071a232ea53c66f7cc98d78279429a ****/
 		%feature("compactdefaultargs") FindDriver;
@@ -409,14 +416,21 @@ None
 ") TFunction_Function;
 		 TFunction_Function();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 
             %feature("autodoc", "1");
             %extend{
@@ -686,14 +700,21 @@ bool
 ") AddPrevious;
 		Standard_Boolean AddPrevious(const TDF_Label & func);
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 		/****************** GetID ******************/
 		/**** md5 signature: afe6002d90f641ca3ea8c9ae9f8fe97c ****/
 		%feature("compactdefaultargs") GetID;
@@ -1229,14 +1250,21 @@ TDF_LabelList
 ") Current;
 		virtual const TDF_LabelList & Current();
 
+		/****************** Dump ******************/
+		/**** md5 signature: ee51cac270c7787d1809a1cb8cf01d91 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+OS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		std::ostream & Dump(std::ostream & OS);
+
 		/****************** GetMaxNbThreads ******************/
 		/**** md5 signature: f69c96860a70a701f350c27debbc0ecf ****/
 		%feature("compactdefaultargs") GetMaxNbThreads;
@@ -1393,14 +1421,21 @@ None
 ") Done;
 		void Done(const Standard_Boolean status);
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Prints th data of the attributes (touched, impacted and valid labels).
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 		/****************** GetID ******************/
 		/**** md5 signature: afe6002d90f641ca3ea8c9ae9f8fe97c ****/
 		%feature("compactdefaultargs") GetID;
@@ -1684,14 +1719,21 @@ TFunction_DoubleMapOfIntegerLabel
 ") ChangeFunctions;
 		TFunction_DoubleMapOfIntegerLabel & ChangeFunctions();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3398f1042b24f9ae49f7e8da6125f793 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "No available documentation.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+anOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & anOS);
+
 		/****************** GetFreeID ******************/
 		/**** md5 signature: 34e64d8664d6cf8b1d7cb4b452f9928a ****/
 		%feature("compactdefaultargs") GetFreeID;

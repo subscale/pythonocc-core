@@ -153,14 +153,21 @@ opencascade::handle<Geom2d_BSplineCurve>
 ") Curve;
 		opencascade::handle<Geom2d_BSplineCurve> Curve();
 
+		/****************** Dump ******************/
+		/**** md5 signature: 3285fe47a669df0eece9c96593dad879 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Prints on the stream o information on the current state of the object. //! private methodes --------------------------------------.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+o: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		virtual void Dump(std::ostream & o);
+
 		/****************** GetAngle1 ******************/
 		/**** md5 signature: 4d8e16f87d9a075ff3d1c86749675db9 ****/
 		%feature("compactdefaultargs") GetAngle1;
@@ -1126,14 +1133,21 @@ ACode: FairCurve_AnalysisCode
 ") Compute;
 		virtual Standard_Boolean Compute(FairCurve_AnalysisCode &OutValue, const Standard_Integer NbIterations = 50, const Standard_Real Tolerance = 1.0e-3);
 
+		/****************** Dump ******************/
+		/**** md5 signature: b42defe2d7a7208961fa81b225a70479 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Prints on the stream o information on the current state of the object. is used to redefine the operator <<.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+o: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		virtual void Dump(std::ostream & o);
+
 		/****************** GetCurvature1 ******************/
 		/**** md5 signature: 52b65eab76a83b1bbd4a765dc4226232 ****/
 		%feature("compactdefaultargs") GetCurvature1;

@@ -581,3 +581,4 @@ class Vrml_WWWInline:
 # hsequence classes
 
 vrml_CommentWriter = vrml.CommentWriter
+vrml_VrmlHeaderWriter = vrml.VrmlHeaderWriter

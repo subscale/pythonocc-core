@@ -393,14 +393,21 @@ opencascade::handle<Geom2d_BSplineCurve>
 ") Curve;
 		opencascade::handle<Geom2d_BSplineCurve> Curve();
 
+		/****************** Dump ******************/
+		/**** md5 signature: d37b43e0b2386dc096d5d707876db157 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "Print on the stream o information about the object.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+o: std::ostream
+
+Returns
+-------
+None
+") Dump;
+		void Dump(std::ostream & o);
+
 		/****************** HasResult ******************/
 		/**** md5 signature: 345d4b0f7e88f528928167976d8256d5 ****/
 		%feature("compactdefaultargs") HasResult;

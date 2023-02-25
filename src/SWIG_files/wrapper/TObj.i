@@ -246,6 +246,22 @@ bool
 ") LoadDocument;
 		virtual Standard_Boolean LoadDocument(const TCollection_ExtendedString & theSourceFile, opencascade::handle<TDocStd_Document> & theTargetDoc);
 
+		/****************** LoadDocument ******************/
+		/**** md5 signature: 6198a02fdef7071ddc8d32deda295e03 ****/
+		%feature("compactdefaultargs") LoadDocument;
+		%feature("autodoc", "Loading the ocaf document from a stream.
+
+Parameters
+----------
+theIStream: std::istream
+theTargetDoc: TDocStd_Document
+
+Returns
+-------
+bool
+") LoadDocument;
+		virtual Standard_Boolean LoadDocument(std::istream & theIStream, opencascade::handle<TDocStd_Document> & theTargetDoc);
+
 		/****************** Messenger ******************/
 		/**** md5 signature: fe56be9196543a6602ef636ef1016498 ****/
 		%feature("compactdefaultargs") Messenger;
@@ -283,6 +299,22 @@ Returns
 bool
 ") SaveDocument;
 		virtual Standard_Boolean SaveDocument(const opencascade::handle<TDocStd_Document> & theSourceDoc, const TCollection_ExtendedString & theTargetFile);
+
+		/****************** SaveDocument ******************/
+		/**** md5 signature: 732e0f95697794910e7302feb84b3e76 ****/
+		%feature("compactdefaultargs") SaveDocument;
+		%feature("autodoc", "Saving the ocaf document to a stream.
+
+Parameters
+----------
+theSourceDoc: TDocStd_Document
+theOStream: std::ostream
+
+Returns
+-------
+bool
+") SaveDocument;
+		virtual Standard_Boolean SaveDocument(const opencascade::handle<TDocStd_Document> & theSourceDoc, std::ostream & theOStream);
 
 		/****************** SetVerbose ******************/
 		/**** md5 signature: ec07929ffcbc58b57cfe36e4754b10e9 ****/
@@ -857,13 +889,21 @@ bool
 ") Load;
 		virtual Standard_Boolean Load(const TCollection_ExtendedString & theFile);
 
+		/****************** Load ******************/
+		/**** md5 signature: 2ffa69b46ac088fac64bbec0e462308b ****/
+		%feature("compactdefaultargs") Load;
+		%feature("autodoc", "Load the ocaf model from a stream. if case of failure, it initializes the model by empty data.
 
-            %feature("autodoc", "1");
-            %extend{
-                void LoadFromString(std::string src) {
-                std::stringstream s(src);
-                self->Load(s);}
-            };
+Parameters
+----------
+theIStream: std::istream
+
+Returns
+-------
+bool
+") Load;
+		virtual Standard_Boolean Load(std::istream & theIStream);
+
 		/****************** Messenger ******************/
 		/**** md5 signature: 77a43db9d3d7b7c3ed75b149057d7c93 ****/
 		%feature("compactdefaultargs") Messenger;
@@ -957,14 +997,21 @@ bool
 ") SaveAs;
 		virtual Standard_Boolean SaveAs(const TCollection_ExtendedString & theFile);
 
+		/****************** SaveAs ******************/
+		/**** md5 signature: f456613ed7926d7d36f3530cb69cdf3e ****/
+		%feature("compactdefaultargs") SaveAs;
+		%feature("autodoc", "Save the model to a stream.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string SaveAsToString() {
-            std::stringstream s;
-            self->SaveAs(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOStream: std::ostream
+
+Returns
+-------
+bool
+") SaveAs;
+		virtual Standard_Boolean SaveAs(std::ostream & theOStream);
+
 		/****************** SetLabel ******************/
 		/**** md5 signature: cc470d5ce9738c8709b266c2b6c1b90a ****/
 		%feature("compactdefaultargs") SetLabel;
@@ -1879,14 +1926,21 @@ opencascade::handle<TObj_Object>
 ") CreateNewObject;
 		static opencascade::handle<TObj_Object> CreateNewObject(const char * theType, const TDF_Label & theLabel);
 
+		/****************** DumpTypes ******************/
+		/**** md5 signature: 6b281615817b960184bb20e020b9d659 ****/
+		%feature("compactdefaultargs") DumpTypes;
+		%feature("autodoc", "Dumps names of all the types registered for persistence to the specified stream.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpTypesToString() {
-            std::stringstream s;
-            self->DumpTypes(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOs: std::ostream
+
+Returns
+-------
+None
+") DumpTypes;
+		static void DumpTypes(std::ostream & theOs);
+
 };
 
 
@@ -2903,14 +2957,21 @@ None
 ") TObj_TXYZ;
 		 TObj_TXYZ();
 
+		/****************** Dump ******************/
+		/**** md5 signature: a70630ee0dbc4de065e099a9519a2a06 ****/
+		%feature("compactdefaultargs") Dump;
+		%feature("autodoc", "This method dumps the attribute value into the stream.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string DumpToString() {
-            std::stringstream s;
-            self->Dump(s);
-            return s.str();}
-        };
+Parameters
+----------
+theOS: std::ostream
+
+Returns
+-------
+std::ostream
+") Dump;
+		virtual std::ostream & Dump(std::ostream & theOS);
+
 		/****************** Get ******************/
 		/**** md5 signature: d4d7c3399f4d5d1d9662bdcf64101489 ****/
 		%feature("compactdefaultargs") Get;

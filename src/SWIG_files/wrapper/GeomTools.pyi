@@ -5,6 +5,7 @@ from OCC.Core.Standard import *
 from OCC.Core.NCollection import *
 from OCC.Core.Geom import *
 from OCC.Core.Geom2d import *
+from OCC.Core.Message import *
 
 
 class geomtools:
@@ -54,5 +55,8 @@ geomtools_Write = geomtools.Write
 geomtools_Write = geomtools.Write
 geomtools_Write = geomtools.Write
 GeomTools_Curve2dSet_PrintCurve2d = GeomTools_Curve2dSet.PrintCurve2d
+GeomTools_Curve2dSet_ReadCurve2d = GeomTools_Curve2dSet.ReadCurve2d
 GeomTools_CurveSet_PrintCurve = GeomTools_CurveSet.PrintCurve
+GeomTools_CurveSet_ReadCurve = GeomTools_CurveSet.ReadCurve
 GeomTools_SurfaceSet_PrintSurface = GeomTools_SurfaceSet.PrintSurface
+GeomTools_SurfaceSet_ReadSurface = GeomTools_SurfaceSet.ReadSurface

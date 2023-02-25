@@ -2,13 +2,13 @@
 ############################
 Running pythonocc-generator.
 ############################
-git revision : 0d7667c
+git revision : 3bf4de6
 
-operating system : Linux 64bit 5.4.0-135-generic
+operating system : Linux 64bit 5.4.0-139-generic
 
 occt version targeted : 7.7.0
 
-date : 2022-12-21 14:49:25.368706
+date : 2023-02-25 05:44:39.795560
 ############################
 
 [INFO ]  Processing toolkit TKBO ===
@@ -19,6 +19,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: BOPAlgo_CheckResult
 [INFO ]  Class: BOPAlgo_Options
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BOPAlgo_PISteps
 [INFO ]  Class: BOPAlgo_SectionAttribute
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -258,6 +260,10 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: BRepLProp_SurfaceTool
 [INFO ]  ## Processing module BRepTools
 [INFO ]  Class: BRepTools
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BRepTools_History
 [INFO ]  Enum: TRelationType
 [INFO ]      skipped method BRepTools_History::4a35f50a2b6bb1bb1303ad7d8374073c
@@ -265,6 +271,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      skipped method BRepTools_History::fb045f600989a1f096e90b81d587d65a
 [INFO ]      skipped method BRepTools_History::bcea4b93e38784928b17c2d0cc2cf68c
 [INFO ]      skipped method BRepTools_History::1e361db725f2785773b933e1d47f0346
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BRepTools_Modification
 [INFO ]      Class BRepTools_Modification is abstract, using %nodefaultctor.
 [INFO ]  Class: BRepTools_Modifier
@@ -279,6 +286,21 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      skipped method BRepTools_ReShape::4a1e1cf3a68bb84f97ab6c753f9ff817
 [INFO ]  Class: BRepTools_ShapeSet
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BRepTools_Substitution
 [INFO ]  Class: BRepTools_WireExplorer
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -292,15 +314,75 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: BinTools_FormatVersion
 [INFO ]  Enum: 
 [INFO ]  Class: BinTools
+[WARNI]      [TypeHint] Skipping type static std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BinTools_Curve2dSet
 [INFO ]      skipped method BinTools_Curve2dSet::e60d722f65a7811be636699da7600e78
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BinTools_CurveSet
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BinTools_LocationSet
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BinTools_ShapeSetBase
+[WARNI]      [TypeHint] Skipping type std::istream, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream, should contain _
+[WARNI]      [TypeHint] param name missing or '&', skip method type hint
+[WARNI]      [TypeHint] Skipping type std::ostream, should contain _
 [INFO ]  Class: BinTools_SurfaceSet
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BinTools_ShapeReader
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: BinTools_ShapeSet
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BinTools_ShapeWriter
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] Skipping unknown type, uint64 not in module list
 [INFO ]  ## Processing module TopExp
 [INFO ]  Class: TopExp
@@ -316,11 +398,29 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping unknown type, int,TopTools not in module list
 [WARNI]      [TypeHint] Skipping unknown type, int,TopoDS not in module list
 [INFO ]  Class: TopTools
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopTools_LocationSet
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopTools_MutexForShapeProvider
 [INFO ]  Class: TopTools_OrientedShapeMapHasher
 [INFO ]  Class: TopTools_ShapeMapHasher
 [INFO ]  Class: TopTools_ShapeSet
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module TopoDS
 [INFO ]  Class: TopoDS
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
@@ -363,7 +463,10 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: BinDrivers_Marker
 [INFO ]  Class: BinDrivers
 [INFO ]  Class: BinDrivers_DocumentRetrievalDriver
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: BinDrivers_DocumentStorageDriver
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module BinMDataXtd
 [INFO ]  Class: BinMDataXtd
 [INFO ]  Class: BinMDataXtd_ConstraintDriver
@@ -375,19 +478,26 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  ## Processing module BinMNaming
 [INFO ]  Class: BinMNaming
 [INFO ]  Class: BinMNaming_NamedShapeDriver
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BinMNaming_NamingDriver
 [INFO ]  Processing toolkit TKBinL ===
 [INFO ]  ## Processing module BinLDrivers
 [INFO ]  Enum: BinLDrivers_Marker
 [INFO ]  Class: BinLDrivers
 [INFO ]  Class: BinLDrivers_DocumentRetrievalDriver
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: BinLDrivers_DocumentSection
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [WARNI]      [TypeHint] Skipping unknown type, uint64 not in module list
 [WARNI]      [TypeHint] Skipping unknown type, uint64 not in module list
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [WARNI]      [TypeHint] Skipping unknown type, uint64 not in module list
 [WARNI]      [TypeHint] Skipping unknown type, uint64 not in module list
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BinLDrivers_DocumentStorageDriver
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module BinMDF
 [WARNI]  This template type cannot be handled: NCollection_DataMap<opencascade::handle<Standard_Type>, opencascade::handle<BinMDF_ADriver>, TColStd_MapTransientHasher>
 [WARNI]  This template type cannot be handled: NCollection_DataMap<opencascade::handle<Standard_Type>, opencascade::handle<BinMDF_ADriver>, TColStd_MapTransientHasher>::Iterator
@@ -436,6 +546,14 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  ## Processing module BinObjMgt
 [INFO ]  Class: BinObjMgt_Persistent
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::istream *, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream *, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BinObjMgt_RRelocationTable
 [INFO ]  Processing toolkit TKBinTObj ===
 [INFO ]  ## Processing module BinTObjDrivers
@@ -543,6 +661,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: TopOpeBRep_TypeLineCurve
 [WARNI]      [TypeHint] Skip type TopoDS_Shape,opencascade::handle, because of trailing :
 [INFO ]  Class: TopOpeBRep
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRep_Bipoint
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TopOpeBRep_DSFiller
@@ -558,13 +678,21 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TopOpeBRep_Hctxee2d
 [INFO ]  Class: TopOpeBRep_Hctxff2d
 [INFO ]  Class: TopOpeBRep_LineInter
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRep_Point2d
 [INFO ]  Class: TopOpeBRep_PointClassifier
 [INFO ]  Class: TopOpeBRep_PointGeomTool
 [INFO ]  Class: TopOpeBRep_ShapeIntersector
 [INFO ]  Class: TopOpeBRep_ShapeIntersector2d
 [INFO ]  Class: TopOpeBRep_ShapeScanner
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRep_VPointInter
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRep_VPointInterClassifier
 [INFO ]  Class: TopOpeBRep_VPointInterIterator
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -592,9 +720,15 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TopOpeBRepBuild_GIter
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRepBuild_GTool
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRepBuild_GTopo
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRepBuild_HBuilder
 [INFO ]  Class: TopOpeBRepBuild_Loop
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -604,6 +738,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TopOpeBRepBuild_ShapeListOfShape
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TopOpeBRepBuild_ShapeSet
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRepBuild_ShellToSolid
 [INFO ]  Class: TopOpeBRepBuild_SolidBuilder
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -652,11 +788,29 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping unknown type, int,TopOpeBRepDS not in module list
 [WARNI]      [TypeHint] Skip type TopoDS_Shape,opencascade::handle, because of trailing :
 [INFO ]  Class: TopOpeBRepDS
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRepDS_Association
 [INFO ]  Class: TopOpeBRepDS_BuildTool
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TopOpeBRepDS_Check
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRepDS_Curve
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TopOpeBRepDS_CurveExplorer
@@ -760,6 +914,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  ## Processing module TopOpeBRepTool
 [INFO ]  Enum: TopOpeBRepTool_OutCurveType
 [INFO ]  Class: TopOpeBRepTool
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRepTool_AncestorsTool
 [INFO ]  Class: TopOpeBRepTool_BoxSort
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -780,6 +936,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TopOpeBRepTool_ShapeExplorer
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopOpeBRepTool_ShapeTool
 [INFO ]  Class: TopOpeBRepTool_SolidClassifier
 [INFO ]  Class: TopOpeBRepTool_TOOL
@@ -800,19 +958,41 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: TDataXtd_ConstraintEnum
 [INFO ]  Enum: TDataXtd_GeometryEnum
 [INFO ]  Class: TDataXtd
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataXtd_Axis
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataXtd_Constraint
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataXtd_Geometry
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataXtd_Pattern
 [INFO ]      Class TDataXtd_Pattern is abstract, using %nodefaultctor.
 [INFO ]  Class: TDataXtd_Placement
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataXtd_Plane
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataXtd_Point
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataXtd_Position
 [INFO ]  Class: TDataXtd_Presentation
 [INFO ]  Class: TDataXtd_Shape
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataXtd_Triangulation
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataXtd_PatternStd
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module TNaming
 [INFO ]  Enum: TNaming_Evolution
 [INFO ]  Enum: TNaming_NameType
@@ -820,6 +1000,12 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [INFO ]  Class: TNaming
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TNaming_Builder
 [INFO ]  Class: TNaming_CopyShape
 [INFO ]  Class: TNaming_DeltaOnModification
@@ -833,7 +1019,12 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TNaming_Localizer
 [INFO ]  Class: TNaming_Name
 [INFO ]  Class: TNaming_NamedShape
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TNaming_Naming
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TNaming_NamingTool
 [INFO ]  Class: TNaming_NewShapeIterator
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -851,6 +1042,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TNaming_TranslateTool
 [INFO ]  Class: TNaming_Translator
 [INFO ]  Class: TNaming_UsedShapes
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Processing toolkit TKCDF ===
 [INFO ]  ## Processing module CDF
 [INFO ]  Enum: CDF_TypeOfActivation
@@ -858,6 +1051,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: CDF_SubComponentStatus
 [INFO ]  Enum: CDF_StoreSetNameStatus
 [INFO ]  Class: CDF_Application
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: CDF_Directory
 [INFO ]  Class: CDF_MetaDataDriver
 [INFO ]      Class CDF_MetaDataDriver is abstract, using %nodefaultctor.
@@ -877,7 +1071,11 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      Class CDM_Application is abstract, using %nodefaultctor.
 [INFO ]  Class: CDM_Document
 [INFO ]      Class CDM_Document is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: CDM_MetaData
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: CDM_Reference
 [INFO ]  Class: CDM_ReferenceIterator
 [INFO ]  ## Processing module LDOM
@@ -887,10 +1085,13 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: PCDM_ReaderStatus
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [INFO ]  Class: PCDM
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: PCDM_ReadWriter
 [INFO ]      Class PCDM_ReadWriter is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: PCDM_Reader
 [INFO ]      Class PCDM_Reader is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: PCDM_ReaderFilter
 [INFO ]  Enum: AppendMode
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -901,9 +1102,11 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: PCDM_ReferenceIterator
 [INFO ]  Class: PCDM_Writer
 [INFO ]      Class PCDM_Writer is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: PCDM_ReadWriter_1
 [INFO ]  Class: PCDM_RetrievalDriver
 [INFO ]  Class: PCDM_StorageDriver
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module UTL
 [INFO ]  Class: UTL
 [INFO ]  Processing toolkit TKFeat ===
@@ -913,6 +1116,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: BRepFeat_PerfSelection
 [INFO ]  Class: BRepFeat
 [INFO ]      skipped method BRepFeat::c84c38f32817cb72fc8df159842b4537
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BRepFeat_Builder
 [INFO ]  Class: BRepFeat_Form
 [INFO ]      Class BRepFeat_Form is abstract, using %nodefaultctor.
@@ -983,6 +1188,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: BRepBlend_AppSurface
 [INFO ]      skipped method BRepBlend_AppSurface::c8d3e7f26c4ee8a50f4eca5274d79e63
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BRepBlend_CurvPointRadInv
 [INFO ]  Class: BRepBlend_Extremity
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -1224,9 +1430,11 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  ## Processing module AdvApprox
 [INFO ]  Class: AdvApprox_ApproxAFunction
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: AdvApprox_Cutting
 [INFO ]      Class AdvApprox_Cutting is abstract, using %nodefaultctor.
 [INFO ]  Class: AdvApprox_SimpleApprox
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: AdvApprox_DichoCutting
 [INFO ]  Class: AdvApprox_PrefAndRec
 [INFO ]  Class: AdvApprox_PrefCutting
@@ -1380,6 +1588,12 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: TopAbs_ShapeEnum
 [INFO ]  Enum: TopAbs_State
 [INFO ]  Class: TopAbs
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Enum passed by reference: TopAbs_Orientation &theOrientation changed to TopAbs_Orientation &OutValue
 [INFO ]  Enum passed by reference: TopAbs_Orientation & theOrientation changed to TopAbs_Orientation &OutValue
 [INFO ]  Enum passed by reference: TopAbs_Orientation & theOrientation changed to TopAbs_Orientation &OutValue
@@ -1403,6 +1617,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum passed by reference: FairCurve_AnalysisCode &Code changed to FairCurve_AnalysisCode &OutValue
 [INFO ]  Enum passed by reference: FairCurve_AnalysisCode & Code changed to FairCurve_AnalysisCode &OutValue
 [INFO ]  Enum passed by reference: FairCurve_AnalysisCode & Code changed to FairCurve_AnalysisCode &OutValue
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: FairCurve_BattenLaw
 [INFO ]  Class: FairCurve_DistributionOfEnergy
 [INFO ]  Class: FairCurve_Energy
@@ -1417,6 +1632,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum passed by reference: FairCurve_AnalysisCode &ACode changed to FairCurve_AnalysisCode &OutValue
 [INFO ]  Enum passed by reference: FairCurve_AnalysisCode & ACode changed to FairCurve_AnalysisCode &OutValue
 [INFO ]  Enum passed by reference: FairCurve_AnalysisCode & ACode changed to FairCurve_AnalysisCode &OutValue
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module GccAna
 [INFO ]  Class: GccAna_Circ2d2TanOn
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -1449,6 +1665,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum passed by reference: GccEnt_Position &thePosition changed to GccEnt_Position &OutValue
 [INFO ]  Enum passed by reference: GccEnt_Position & thePosition changed to GccEnt_Position &OutValue
 [INFO ]  Enum passed by reference: GccEnt_Position & thePosition changed to GccEnt_Position &OutValue
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: GccEnt_QualifiedCirc
 [INFO ]  Class: GccEnt_QualifiedLin
 [INFO ]  ## Processing module GccInt
@@ -2051,6 +2269,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  ## Processing module LocalAnalysis
 [INFO ]  Enum: LocalAnalysis_StatusErrorType
 [INFO ]  Class: LocalAnalysis
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: LocalAnalysis_CurveContinuity
 [INFO ]  Class: LocalAnalysis_SurfaceContinuity
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -2106,6 +2326,7 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [INFO ]  Class: AdvApp2Var_ApproxAFunc2Var
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: AdvApp2Var_ApproxF2var
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
@@ -2258,8 +2479,10 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: AppDef_MultiLine
 [INFO ]      skipped method AppDef_MultiLine::986a9f0357719733cc51a4559940a99a
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: AppDef_MultiPointConstraint
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: AppDef_MyBSplGradientOfBSplineCompute
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: AppDef_MyGradientOfCompute
@@ -2289,6 +2512,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: AppDef_TheResol
 [INFO ]      skipped method AppDef_TheResol::585075c65a8681dedf24240dbb90f7f4
 [INFO ]  Class: AppDef_Variational
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: AppDef_LinearCriteria
 [INFO ]      Creating Get and Set methods for method EstLength
 [INFO ]  ## Processing module AppParCurves
@@ -2302,10 +2526,13 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: AppParCurves_MultiCurve
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: AppParCurves_MultiPoint
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: AppParCurves_MultiBSpCurve
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module Approx
 [INFO ]  Found HARRAY1 definitionApprox_HArray1OfGTrsf2d: Approx_Array1OfGTrsf2d
 [INFO ]  Found HARRAY1 definitionApprox_HArray1OfAdHSurface: Approx_Array1OfAdHSurface
@@ -2315,10 +2542,12 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [INFO ]  Class: Approx_Curve2d
 [INFO ]  Class: Approx_Curve3d
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Approx_CurveOnSurface
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: Approx_CurvilinearParameter
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Approx_CurvlinFunc
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: Approx_FitAndDivide
@@ -2330,6 +2559,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      Wrap nested class Approx_SameParameter::Approx_SameParameter_Data
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: Approx_SweepApproximation
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Approx_SweepFunction
 [INFO ]      Class Approx_SweepFunction is abstract, using %nodefaultctor.
 [INFO ]  ## Processing module BndLib
@@ -2578,6 +2808,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: Status
 [INFO ]  Class: Geom2dConvert_ApproxCurve
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Geom2dConvert_BSplineCurveKnotSplitting
 [INFO ]  Class: Geom2dConvert_BSplineCurveToBezierCurve
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -2590,8 +2821,10 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: GeomConvert
 [INFO ]  Class: GeomConvert_ApproxCurve
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: GeomConvert_ApproxSurface
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: GeomConvert_BSplineCurveKnotSplitting
 [INFO ]  Class: GeomConvert_BSplineCurveToBezierCurve
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -2632,10 +2865,44 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: GeomProjLib
 [INFO ]  ## Processing module GeomTools
 [INFO ]  Class: GeomTools
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: GeomTools_Curve2dSet
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: GeomTools_CurveSet
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: GeomTools_SurfaceSet
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: GeomTools_UndefinedTypeHandler
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type virtual std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type virtual std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type virtual std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  ## Processing module Hermit
 [INFO ]  Class: Hermit
 [INFO ]  ## Processing module IntAna
@@ -2955,6 +3222,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: IGESControl_ToolContainer
 [INFO ]  Class: IGESControl_Writer
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module IGESData
 [INFO ]  Found HARRAY1 definitionIGESData_HArray1OfIGESEntity: IGESData_Array1OfIGESEntity
 [INFO ]  Enum: IGESData_ReadStage
@@ -2977,8 +3245,16 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: IGESData_GlobalNodeOfWriterLib
 [INFO ]  Class: IGESData_GlobalSection
 [INFO ]  Class: IGESData_IGESDumper
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: IGESData_IGESEntity
 [INFO ]  Class: IGESData_IGESModel
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: IGESData_IGESReaderData
 [INFO ]  Class: IGESData_IGESReaderTool
 [INFO ]  Class: IGESData_IGESType
@@ -2992,6 +3268,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      skipped method IGESData_IGESWriter::54f24415f8fed6da601139a5a471b407
 [INFO ]      skipped method IGESData_IGESWriter::f448a83aaba93961554144bc00673627
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]      Creating Get and Set methods for method WriteMode
 [INFO ]  Class: IGESData_NodeOfSpecificLib
 [INFO ]  Class: IGESData_NodeOfWriterLib
@@ -3011,12 +3288,14 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: IGESData_SpecificModule
 [INFO ]      Class IGESData_SpecificModule is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: IGESData_ToolLocation
 [INFO ]  Class: IGESData_WriterLib
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: IGESData_ColorEntity
 [INFO ]  Class: IGESData_DefaultGeneral
 [INFO ]  Class: IGESData_DefaultSpecific
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: IGESData_FileProtocol
 [INFO ]  Class: IGESData_LabelDisplayEntity
 [INFO ]  Class: IGESData_LevelListEntity
@@ -3124,9 +3403,14 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TDF
 [INFO ]  Class: TDF_Attribute
 [INFO ]      Class TDF_Attribute is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
 [INFO ]  Class: TDF_AttributeDelta
 [INFO ]      Class TDF_AttributeDelta is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDF_AttributeIterator
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TDF_ChildIDIterator
@@ -3140,13 +3424,29 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TDF_CopyTool
 [INFO ]  Class: TDF_Data
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDF_DataSet
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDF_Delta
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDF_IDFilter
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDF_Label
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDF_LabelMapHasher
 [INFO ]  Class: TDF_RelocationTable
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDF_Tool
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDF_Transaction
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TDF_DeltaOnAddition
@@ -3155,6 +3455,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TDF_DeltaOnRemoval
 [INFO ]  Class: TDF_DeltaOnResume
 [INFO ]  Class: TDF_Reference
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDF_TagSource
 [INFO ]  Class: TDF_DefaultDeltaOnModification
 [INFO ]  Class: TDF_DefaultDeltaOnRemoval
@@ -3164,21 +3466,39 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skip type TCollection_ExtendedString,opencascade::handle, because of trailing :
 [WARNI]      [TypeHint] Skip type TCollection_ExtendedString,opencascade::handle, because of trailing :
 [INFO ]  Class: TDataStd
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_AsciiString
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_BooleanArray
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_BooleanList
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_ByteArray
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_ChildNodeIterator
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TDataStd_Current
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_DeltaOnModificationOfByteArray
 [INFO ]  Class: TDataStd_DeltaOnModificationOfExtStringArray
 [INFO ]  Class: TDataStd_DeltaOnModificationOfIntArray
 [INFO ]  Class: TDataStd_DeltaOnModificationOfIntPackedMap
 [INFO ]  Class: TDataStd_DeltaOnModificationOfRealArray
 [INFO ]  Class: TDataStd_Expression
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_ExtStringArray
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_ExtStringList
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_HDataMapOfStringByte
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TDataStd_HDataMapOfStringHArray1OfInteger
@@ -3192,24 +3512,62 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TDataStd_HDataMapOfStringString
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TDataStd_IntPackedMap
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_Integer
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_IntegerArray
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_IntegerList
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_NamedData
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_Real
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_RealArray
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_RealList
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_ReferenceArray
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_ReferenceList
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_TreeNode
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_UAttribute
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_Variable
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_Comment
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_Directory
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_Name
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_NoteBook
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_Relation
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDataStd_Tick
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module TDocStd
 [INFO ]  Enum: TDocStd_FormatVersion
 [INFO ]  Enum: 
@@ -3217,18 +3575,32 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [INFO ]  Class: TDocStd
 [INFO ]  Class: TDocStd_Application
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDocStd_ApplicationDelta
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDocStd_CompoundDelta
 [INFO ]  Class: TDocStd_Context
 [INFO ]  Class: TDocStd_Document
 [INFO ]  Class: TDocStd_Modified
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDocStd_MultiTransactionManager
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDocStd_Owner
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDocStd_PathParser
 [INFO ]  Class: TDocStd_XLink
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDocStd_XLinkIterator
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TDocStd_XLinkRoot
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TDocStd_XLinkTool
 [INFO ]  ## Processing module TFunction
 [INFO ]  Found HARRAY1 definitionTFunction_HArray1OfDataMapOfGUIDDriver: TFunction_Array1OfDataMapOfGUIDDriver
@@ -3238,14 +3610,26 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TFunction_Driver
 [INFO ]      Class TFunction_Driver is abstract, using %nodefaultctor.
 [INFO ]  Class: TFunction_DriverTable
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TFunction_Function
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TFunction_GraphNode
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TFunction_IFunction
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: TFunction_Iterator
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TFunction_Logbook
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TFunction_Scope
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Processing toolkit TKMath ===
 [INFO ]  ## Processing module BSplCLib
 [INFO ]  Enum: BSplCLib_MultDistribution
@@ -3452,6 +3836,15 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [INFO ]  Class: Poly
 [INFO ]      skipped method Poly::be2309d5542c18666f33b14649134b1d
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Poly_ArrayOfNodes
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: Poly_ArrayOfUVNodes
@@ -3461,6 +3854,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: Poly_CoherentNode
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] Skip type Poly_CoherentTriPtr::Iterator, because of trailing :
 [INFO ]  Class: Poly_CoherentTriangle
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -3521,12 +3915,16 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  ## Processing module TopLoc
 [INFO ]  Class: TopLoc_Datum3D
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopLoc_ItemLocation
 [INFO ]  Class: TopLoc_Location
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TopLoc_SListNodeOfItemLocation
 [INFO ]  Class: TopLoc_SListOfItemLocation
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module gp
 [INFO ]  Enum: gp_TrsfForm
 [INFO ]  Enum: gp_EulerSequence
@@ -3613,78 +4011,107 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: math_Status
 [INFO ]  Class: math
 [INFO ]  Class: math_BFGS
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_BissecNewton
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_BracketMinimum
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_BracketedRoot
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_BrentMinimum
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_BullardGenerator
 [INFO ]  Class: math_ComputeGaussPointsAndWeights
 [INFO ]  Class: math_ComputeKronrodPointsAndWeights
 [INFO ]  Class: math_Crout
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_DirectPolynomialRoots
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_DoubleTab
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]      Creating Get and Set methods for method Value
 [INFO ]  Class: math_EigenValuesSearcher
 [INFO ]  Class: math_FRPR
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_Function
 [INFO ]      Class math_Function is abstract, using %nodefaultctor.
 [INFO ]  Class: math_FunctionAllRoots
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_FunctionRoot
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_FunctionRoots
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_FunctionSample
 [INFO ]  Class: math_FunctionSet
 [INFO ]      Class math_FunctionSet is abstract, using %nodefaultctor.
 [INFO ]  Class: math_FunctionSetRoot
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
 [INFO ]  Class: math_Gauss
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_GaussLeastSquare
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_GaussMultipleIntegration
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_GaussSetIntegration
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_GaussSingleIntegration
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_GlobOptMin
 [INFO ]      Wrap nested class math_GlobOptMin::NCollection_CellFilter_Inspector
 [INFO ]  Class: math_Householder
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_IntegerVector
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]      Creating Get and Set methods for method Value
 [INFO ]  Class: math_Jacobi
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_KronrodSingleIntegration
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: math_Matrix
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]      Creating Get and Set methods for method Value
 [INFO ]  Class: math_MultipleVarFunction
 [INFO ]      Class math_MultipleVarFunction is abstract, using %nodefaultctor.
 [INFO ]  Class: math_NewtonFunctionRoot
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_NewtonFunctionSetRoot
 [INFO ]      skipped method math_NewtonFunctionSetRoot::c825243d16208354db2b16a295147184
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_NewtonMinimum
 [INFO ]      skipped method math_NewtonMinimum::d26308710f3aff3315cd90ff796c2182
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_PSO
 [INFO ]  Class: math_PSOParticlesPool
 [WARNI]      [TypeHint] Skipping unknown type, PSO not in module list
 [WARNI]      [TypeHint] Skipping unknown type, PSO not in module list
 [WARNI]      [TypeHint] Skipping unknown type, PSO not in module list
 [INFO ]  Class: math_Powell
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_SVD
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_TrigonometricFunctionRoots
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_Uzawa
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: math_ValueAndWeight
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: math_Vector
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]      Creating Get and Set methods for method Value
 [INFO ]  Class: math_FunctionSetWithDerivatives
 [INFO ]      Class math_FunctionSetWithDerivatives is abstract, using %nodefaultctor.
@@ -3723,6 +4150,7 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping type const IMeshData::MapOfInteger &, should contain _
 [WARNI]      [TypeHint] Skipping type const IMeshData::ListOfInteger &, should contain _
 [WARNI]      [TypeHint] Skipping type const IMeshData::MapOfInteger &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BRepMesh_Deflection
 [WARNI]      [TypeHint] Skipping type const IMeshData::IEdgeHandle &, should contain _
 [WARNI]      [TypeHint] Skipping type const IMeshData::IWireHandle &, should contain _
@@ -3797,6 +4225,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: BRepMesh_VertexTool
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [WARNI]      [TypeHint] Skipping type const IMeshData::ListOfInteger &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BRepMesh_DelabellaBaseMeshAlgo
 [INFO ]  Class: BRepMesh_Edge
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -4405,6 +4834,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: STEPSelections_AssemblyComponent
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: STEPSelections_AssemblyExplorer
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: STEPSelections_AssemblyLink
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: STEPSelections_Counter
@@ -6820,10 +7250,14 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [INFO ]  Class: TObj_Application
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TObj_Assistant
 [INFO ]  Class: TObj_CheckModel
 [INFO ]  Class: TObj_Model
 [INFO ]      Class TObj_Model is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TObj_Object
 [INFO ]  Enum: TypeFlags
 [INFO ]  Enum: ObjectState
@@ -6832,6 +7266,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TObj_ObjectIterator
 [INFO ]  Class: TObj_Persistence
 [INFO ]      Class TObj_Persistence is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TObj_TIntSparseArray
 [WARNI]      [TypeHint] Skipping type Iterator, should contain _
 [INFO ]  Class: TObj_TModel
@@ -6839,6 +7274,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TObj_TObject
 [INFO ]  Class: TObj_TReference
 [INFO ]  Class: TObj_TXYZ
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TObj_LabelIterator
 [INFO ]      Class TObj_LabelIterator is abstract, using %nodefaultctor.
 [INFO ]  Constructor skipped for abstract class TObj_LabelIterator
@@ -6954,6 +7391,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: BRepCheck_Status
 [WARNI]      [TypeHint] Skip type TopoDS_Shape,opencascade::handle, because of trailing :
 [INFO ]  Class: BRepCheck
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BRepCheck_Analyzer
 [INFO ]  Class: BRepCheck_Result
 [INFO ]      Class BRepCheck_Result is abstract, using %nodefaultctor.
@@ -6993,6 +7431,7 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping unknown type, int,TColStd not in module list
 [INFO ]  Class: BRepExtrema_DistShapeShape
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: BRepExtrema_DistanceSS
 [INFO ]  Class: BRepExtrema_ElementFilter
 [INFO ]  Enum: FilterResult
@@ -7652,9 +8091,17 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: Vrml_CylinderParts
 [INFO ]  Enum: Vrml_FontStyleStyle
 [INFO ]  Class: Vrml
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type static std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_AsciiText
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Cone
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_ConfigurationNode
 [INFO ]      Wrap nested class Vrml_ConfigurationNode::Vrml_InternalSection
 [INFO ]  Enum: WriteMode_WriterVersion
@@ -7665,69 +8112,141 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping unknown type, DE not in module list
 [INFO ]  Class: Vrml_Coordinate3
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Cube
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Cylinder
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_DirectionalLight
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_FontStyle
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Group
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_IndexedFaceSet
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_IndexedLineSet
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Info
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Instancing
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_LOD
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Material
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_MaterialBinding
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_MatrixTransform
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Normal
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_NormalBinding
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_OrthographicCamera
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_PerspectiveCamera
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_PointLight
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_PointSet
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Provider
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [WARNI]      [TypeHint] Skipping unknown type, DE not in module list
 [INFO ]  Class: Vrml_Rotation
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_SFImage
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: Vrml_SFRotation
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: Vrml_Scale
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Separator
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_ShapeHints
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Sphere
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_SpotLight
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Switch
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Texture2
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Texture2Transform
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_TextureCoordinate2
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Transform
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_TransformSeparator
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_Translation
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_WWWAnchor
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Vrml_WWWInline
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module VrmlAPI
 [INFO ]  Enum: VrmlAPI_RepresentationOfShape
 [INFO ]  Class: VrmlAPI
@@ -7737,20 +8256,42 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Enum: VrmlConverter_TypeOfLight
 [INFO ]  Enum: VrmlConverter_TypeOfCamera
 [INFO ]  Class: VrmlConverter_Curve
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: VrmlConverter_DeflectionCurve
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: VrmlConverter_Drawer
 [INFO ]  Class: VrmlConverter_HLRShape
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: VrmlConverter_LineAspect
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: VrmlConverter_PointAspect
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: VrmlConverter_Projector
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: VrmlConverter_ShadedShape
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: VrmlConverter_ShadingAspect
 [INFO ]  Class: VrmlConverter_WFDeflectionRestrictedFace
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: VrmlConverter_WFDeflectionShape
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: VrmlConverter_WFRestrictedFace
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: VrmlConverter_WFShape
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: VrmlConverter_IsoAspect
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  ## Processing module VrmlData
@@ -7771,6 +8312,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: VrmlData_Scene
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] Skipping type Iterator, should contain _
 [WARNI]      [TypeHint] Skip type VrmlData_MapOfNode::Iterator, because of trailing :
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
@@ -7878,6 +8420,8 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] Skipping type opencascade::handle, should contain _
 [INFO ]  Class: XCAFDoc
 [INFO ]  Class: XCAFDoc_Area
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_AssemblyGraph
 [INFO ]      Wrap nested class XCAFDoc_AssemblyGraph::Iterator
 [INFO ]  Enum: NodeType
@@ -7888,11 +8432,15 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      Wrap nested class XCAFDoc_AssemblyItemId::Hasher
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: XCAFDoc_AssemblyItemRef
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_AssemblyIterator
 [INFO ]      Wrap nested class XCAFDoc_AssemblyIterator::AuxAssemblyItem
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: XCAFDoc_AssemblyTool
 [INFO ]  Class: XCAFDoc_Centroid
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_ClippingPlaneTool
 [INFO ]  Class: XCAFDoc_Color
 [INFO ]  Class: XCAFDoc_ColorTool
@@ -7906,15 +8454,28 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: XCAFDoc_Editor
 [WARNI]      [TypeHint] Skip type NCollection_DataMap<opencascade::handle<XCAFDoc_VisMaterial>,, because of trailing :
 [INFO ]  Class: XCAFDoc_GraphNode
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_LayerTool
 [INFO ]  Class: XCAFDoc_LengthUnit
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_Location
 [INFO ]  Class: XCAFDoc_Material
 [INFO ]  Class: XCAFDoc_MaterialTool
 [INFO ]  Class: XCAFDoc_Note
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_NotesTool
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_ShapeMapTool
 [INFO ]  Class: XCAFDoc_ShapeTool
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_View
 [INFO ]  Class: XCAFDoc_ViewTool
 [INFO ]  Class: XCAFDoc_VisMaterial
@@ -7925,8 +8486,14 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
 [INFO ]  Class: XCAFDoc_Volume
+[WARNI]      [TypeHint] Skipping type virtual std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_NoteBinData
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_NoteComment
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XCAFDoc_NoteBalloon
 [INFO ]  ## Processing module XCAFNoteObjects
 [INFO ]  Class: XCAFNoteObjects_NoteObject
@@ -8038,6 +8605,16 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  ## Processing module XBRepMesh
 [INFO ]  Class: XBRepMesh
 [INFO ]  Processing toolkit TKXSBase ===
+[INFO ]  ## Processing module APIHeaderSection
+[INFO ]  Class: APIHeaderSection_EditHeader
+[INFO ]  Class: APIHeaderSection_MakeHeader
+[INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[INFO ]  ## Processing module HeaderSection
+[INFO ]  Class: HeaderSection
+[INFO ]  Class: HeaderSection_FileDescription
+[INFO ]  Class: HeaderSection_FileName
+[INFO ]  Class: HeaderSection_FileSchema
+[INFO ]  Class: HeaderSection_Protocol
 [INFO ]  ## Processing module IFSelect
 [INFO ]  Found HSEQUENCE definitionIFSelect_HSeqOfSelection: IFSelect_TSeqOfSelection
 [INFO ]  Enum: IFSelect_PrintFail
@@ -8067,8 +8644,12 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      skipped method IFSelect_EditForm::083e9709e17242d3748947f37b028e11
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]      Creating Get and Set methods for method EditKeepStatus
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: IFSelect_Editor
 [INFO ]      Class IFSelect_Editor is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: IFSelect_Functions
 [INFO ]  Class: IFSelect_GeneralModifier
 [INFO ]      Class IFSelect_GeneralModifier is abstract, using %nodefaultctor.
@@ -8093,12 +8674,23 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: IFSelect_SignatureList
 [WARNI]      [TypeHint] Skipping type NCollection_IndexedDataMap<TCollection_AsciiString,, seems to be a template
 [INFO ]      Creating Get and Set methods for method ModeSignOnly
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: IFSelect_Transformer
 [INFO ]      Class IFSelect_Transformer is abstract, using %nodefaultctor.
 [INFO ]  Class: IFSelect_WorkLibrary
 [INFO ]      Class IFSelect_WorkLibrary is abstract, using %nodefaultctor.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: IFSelect_WorkSession
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [WARNI]      [TypeHint] Skip type NCollection_Vector<opencascade::handle<Standard_Transient>, because of trailing :
 [INFO ]  Class: IFSelect_Act
@@ -8183,10 +8775,15 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: Interface_Check
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Interface_CheckIterator
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Interface_CheckTool
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Interface_CopyControl
 [INFO ]      Class Interface_CopyControl is abstract, using %nodefaultctor.
 [INFO ]  Class: Interface_CopyTool
@@ -8221,9 +8818,17 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: Interface_InterfaceModel
 [INFO ]      Class Interface_InterfaceModel is abstract, using %nodefaultctor.
 [INFO ]      Creating Get and Set methods for method DispatchStatus
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Interface_LineBuffer
 [INFO ]  Class: Interface_MSG
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Interface_MapAsciiStringHasher
 [INFO ]  Class: Interface_NodeOfGeneralLib
 [INFO ]  Class: Interface_NodeOfReaderLib
@@ -8243,6 +8848,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: Interface_ShareTool
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Interface_SignLabel
 [INFO ]  Class: Interface_SignType
 [INFO ]      Class Interface_SignType is abstract, using %nodefaultctor.
@@ -8257,6 +8863,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: Interface_Static
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [WARNI]      [TypeHint] Skipping type NCollection_DataMap<TCollection_AsciiString,, seems to be a template
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module MoniTool
 [INFO ]  Found HSEQUENCE definitionMoniTool_HSequenceOfElement: MoniTool_SequenceOfElement
 [INFO ]  Enum: MoniTool_ValueType
@@ -8284,13 +8891,24 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: MoniTool_Stat
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: MoniTool_Timer
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: MoniTool_TimerSentry
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: MoniTool_TypedValue
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [WARNI]      [TypeHint] Skipping type NCollection_DataMap<TCollection_AsciiString,, seems to be a template
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: MoniTool_SignShape
 [INFO ]  Class: MoniTool_TransientElem
+[INFO ]  ## Processing module RWHeaderSection
+[INFO ]  Class: RWHeaderSection
+[INFO ]  Class: RWHeaderSection_GeneralModule
+[INFO ]  Class: RWHeaderSection_RWFileDescription
+[INFO ]  Class: RWHeaderSection_RWFileName
+[INFO ]  Class: RWHeaderSection_RWFileSchema
+[INFO ]  Class: RWHeaderSection_ReadWriteModule
 [INFO ]  ## Processing module StepData
 [INFO ]  Found HARRAY1 definitionStepData_HArray1OfField: StepData_Array1OfField
 [INFO ]  Enum: StepData_Logical
@@ -8318,7 +8936,11 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: StepData_SelectType
 [INFO ]      Class StepData_SelectType is abstract, using %nodefaultctor.
 [INFO ]  Class: StepData_StepDumper
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: StepData_StepModel
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: StepData_StepReaderData
 [INFO ]      skipped method StepData_StepReaderData::41fd597fd62bc7c1b9e899370af441a4
 [INFO ]      skipped method StepData_StepReaderData::d8738907488f974418ada15c126d1326
@@ -8331,6 +8953,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: StepData_StepReaderTool
 [INFO ]  Class: StepData_StepWriter
 [INFO ]      Creating Get and Set methods for method LabelMode
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]      Creating Get and Set methods for method TypeMode
 [INFO ]  Class: StepData_WriterLib
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -8372,6 +8995,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: Transfer_MapContainer
 [INFO ]  Class: Transfer_ProcessForTransient
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Transfer_ResultFromModel
 [INFO ]  Class: Transfer_ResultFromTransient
 [INFO ]  Class: Transfer_TransferDispatch
@@ -8384,6 +9008,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      Creating Get and Set methods for method ModeTrans
 [INFO ]  Class: Transfer_ActorOfTransientProcess
 [INFO ]  Class: Transfer_FinderProcess
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Transfer_IteratorOfProcessForFinder
 [INFO ]  Class: Transfer_IteratorOfProcessForTransient
 [INFO ]  Class: Transfer_MultipleBinder
@@ -8393,6 +9019,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: Transfer_TransientMapper
 [INFO ]  Class: Transfer_TransientProcess
 [WARNI]      [TypeHint] Skipping type NCollection_DataMap<TCollection_AsciiString,, seems to be a template
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Transfer_VoidBinder
 [INFO ]  Class: Transfer_ActorDispatch
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -8433,6 +9061,9 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: XSControl_Functions
 [INFO ]  Class: XSControl_Reader
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: XSControl_SelectForTransfer
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -8440,11 +9071,13 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: XSControl_TransferReader
 [WARNI]      [TypeHint] Skipping type NCollection_DataMap<TCollection_AsciiString,, seems to be a template
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XSControl_TransferWriter
 [INFO ]  Class: XSControl_Utils
 [INFO ]  Class: XSControl_Vars
 [INFO ]  Class: XSControl_WorkSession
 [WARNI]      [TypeHint] Skipping type NCollection_DataMap<TCollection_AsciiString,, seems to be a template
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] Skipping type NCollection_DataMap<TCollection_AsciiString,, seems to be a template
 [INFO ]  Class: XSControl_Writer
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
@@ -8471,7 +9104,9 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  ## Processing module XmlLDrivers
 [INFO ]  Class: XmlLDrivers
 [INFO ]  Class: XmlLDrivers_DocumentRetrievalDriver
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: XmlLDrivers_DocumentStorageDriver
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: XmlLDrivers_NamespaceDef
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  ## Processing module XmlMDF
@@ -8626,12 +9261,16 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
 [INFO ]  Class: Message_Report
 [WARNI]      [TypeHint] Skipping type NCollection_IndexedMap<Message_MetricType>, seems to be a template
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Message_AlertExtended
 [INFO ]  Class: Message_AttributeMeter
 [INFO ]  Class: Message_AttributeObject
 [INFO ]  Class: Message_AttributeStream
 [INFO ]  Class: Message_PrinterOStream
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::ostream *, should contain _
 [INFO ]  Class: Message_PrinterSystemLog
 [INFO ]  Class: Message_PrinterToReport
 [INFO ]  Class: Message_ProgressSentry
@@ -8701,6 +9340,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]      skipped method Standard_ErrorHandler::ef042789fa8460b413c73405dcff195e
 [INFO ]  Class: Standard_GUID
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Standard_MMgrRoot
 [INFO ]      Class Standard_MMgrRoot is abstract, using %nodefaultctor.
 [INFO ]  Class: Standard_Static_Assert<true>
@@ -8711,6 +9351,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: Standard_Failure
 [INFO ]      Wrap nested class Standard_Failure::StringRef
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: Standard_MMgrOpt
 [INFO ]      skipped method Standard_MMgrOpt::32213e26879b7b9d5ec9e1af79f3f5b8
 [INFO ]  Class: Standard_MMgrRaw
@@ -8719,6 +9360,7 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: Standard_Persistent
 [INFO ]      Creating Get and Set methods for method TypeNum
 [INFO ]  Class: Standard_Type
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] Skipping type const, should contain _
 [WARNI]      [TypeHint] Skipping type const, should contain _
 [WARNI]      [TypeHint] Skipping type const, should contain _
@@ -8818,6 +9460,7 @@ date : 2022-12-21 14:49:25.368706
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
 [WARNI]      [TypeHint] param name missing or '&', skip method type hint
@@ -8828,13 +9471,18 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: TCollection
 [INFO ]  Class: TCollection_AsciiString
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
+[WARNI]      [TypeHint] Skipping type std::istream &, should contain _
 [INFO ]  Class: TCollection_ExtendedString
 [INFO ]      skipped method TCollection_ExtendedString::e5ff9f94dec233d371e2d6eeef7b39cf
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TCollection_HAsciiString
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  Class: TCollection_HExtendedString
 [INFO ]      [TypeHint] More than 1 constructor, @overload decorator needed.
+[WARNI]      [TypeHint] Skipping type std::ostream &, should contain _
 [INFO ]  ## Processing module TShort
 [INFO ]  Found HARRAY1 definitionTShort_HArray1OfShortReal: TShort_Array1OfShortReal
 [INFO ]  Found HARRAY2 definitionTShort_HArray2OfShortReal: TShort_Array2OfShortReal
@@ -8883,8 +9531,8 @@ date : 2022-12-21 14:49:25.368706
 [INFO ]  Class: UnitsMethods
 [INFO ]  
 #################################################
-SWIG interface file generation completed in 38.08s
+SWIG interface file generation completed in 34.59s
 #################################################
 
-[INFO ]  Number of classes: 4574
-[INFO ]  Number of methods: 46433
+[INFO ]  Number of classes: 4587
+[INFO ]  Number of methods: 46544

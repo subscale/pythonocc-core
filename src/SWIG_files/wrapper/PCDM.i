@@ -256,6 +256,22 @@ PCDM_TypeOfFileDriver
 ") FileDriverType;
 		static PCDM_TypeOfFileDriver FileDriverType(const TCollection_AsciiString & aFileName, opencascade::handle<Storage_BaseDriver> & aBaseDriver);
 
+		/****************** FileDriverType ******************/
+		/**** md5 signature: 86ad52e7b1f77003aaab8c0233051baf ****/
+		%feature("compactdefaultargs") FileDriverType;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+theIStream: std::istream
+theBaseDriver: Storage_BaseDriver
+
+Returns
+-------
+PCDM_TypeOfFileDriver
+") FileDriverType;
+		static PCDM_TypeOfFileDriver FileDriverType(std::istream & theIStream, opencascade::handle<Storage_BaseDriver> & theBaseDriver);
+
 };
 
 
@@ -291,6 +307,22 @@ Returns
 TCollection_ExtendedString
 ") FileFormat;
 		static TCollection_ExtendedString FileFormat(const TCollection_ExtendedString & aFileName);
+
+		/****************** FileFormat ******************/
+		/**** md5 signature: 290efbfac7ae6d5a7f55f592df7bd7f7 ****/
+		%feature("compactdefaultargs") FileFormat;
+		%feature("autodoc", "Tries to get a format from the stream. returns an empty string if the file could not be read or does not have a fileformat information.
+
+Parameters
+----------
+theIStream: std::istream
+theData: Storage_Data
+
+Returns
+-------
+TCollection_ExtendedString
+") FileFormat;
+		static TCollection_ExtendedString FileFormat(std::istream & theIStream, opencascade::handle<Storage_Data> & theData);
 
 		/****************** Open ******************/
 		/**** md5 signature: a144cbf2785ef2f8f31a70359be3305c ****/
@@ -541,6 +573,28 @@ Returns
 None
 ") Read;
 		virtual void Read(const TCollection_ExtendedString & aFileName, const opencascade::handle<CDM_Document> & aNewDocument, const opencascade::handle<CDM_Application> & anApplication, const opencascade::handle<PCDM_ReaderFilter> & theFilter = opencascade::handle<PCDM_ReaderFilter>(), const Message_ProgressRange & theProgress = Message_ProgressRange());
+
+		/****************** Read ******************/
+		/**** md5 signature: 8f1b39567f4c794c23a8f443996b71d0 ****/
+		%feature("compactdefaultargs") Read;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+theIStream: std::istream
+theStorageData: Storage_Data
+theDoc: CDM_Document
+theApplication: CDM_Application
+theFilter: PCDM_ReaderFilter,optional
+	default value is opencascade::handle<PCDM_ReaderFilter>()
+theProgress: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Read;
+		virtual void Read(std::istream & theIStream, const opencascade::handle<Storage_Data> & theStorageData, const opencascade::handle<CDM_Document> & theDoc, const opencascade::handle<CDM_Application> & theApplication, const opencascade::handle<PCDM_ReaderFilter> & theFilter = opencascade::handle<PCDM_ReaderFilter>(), const Message_ProgressRange & theProgress = Message_ProgressRange());
 
 };
 
@@ -1048,6 +1102,24 @@ None
 ") Write;
 		virtual void Write(const opencascade::handle<CDM_Document> & aDocument, const TCollection_ExtendedString & aFileName, const Message_ProgressRange & theRange = Message_ProgressRange());
 
+		/****************** Write ******************/
+		/**** md5 signature: 8baf1d701c86c68efb7596bfc9c38f31 ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "Write <thedocument> to theostream.
+
+Parameters
+----------
+theDocument: CDM_Document
+theOStream: std::ostream
+theRange: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Write;
+		virtual void Write(const opencascade::handle<CDM_Document> & theDocument, std::ostream & theOStream, const Message_ProgressRange & theRange = Message_ProgressRange());
+
 };
 
 
@@ -1434,6 +1506,24 @@ Returns
 None
 ") Write;
 		virtual void Write(const opencascade::handle<CDM_Document> & aDocument, const TCollection_ExtendedString & aFileName, const Message_ProgressRange & theRange = Message_ProgressRange());
+
+		/****************** Write ******************/
+		/**** md5 signature: 1593005190d18463c833b2c78ffb13a5 ****/
+		%feature("compactdefaultargs") Write;
+		%feature("autodoc", "Write <thedocument> to theostream.
+
+Parameters
+----------
+theDocument: CDM_Document
+theOStream: std::ostream
+theRange: Message_ProgressRange,optional
+	default value is Message_ProgressRange()
+
+Returns
+-------
+None
+") Write;
+		virtual void Write(const opencascade::handle<CDM_Document> & theDocument, std::ostream & theOStream, const Message_ProgressRange & theRange = Message_ProgressRange());
 
 };
 

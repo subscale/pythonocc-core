@@ -396,6 +396,92 @@ TopAbs_ShapeEnum
 ") KindToShape;
 		static TopAbs_ShapeEnum KindToShape(const TopOpeBRepDS_Kind K);
 
+		/****************** Print ******************/
+		/**** md5 signature: 0ef9d8e552686e3841b3de5afdb9e892 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+S: TopAbs_State
+OS: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TopAbs_State S, std::ostream & OS);
+
+		/****************** Print ******************/
+		/**** md5 signature: 3a4129a4c2148a798a76811bead8b8ba ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+K: TopOpeBRepDS_Kind
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TopOpeBRepDS_Kind K, std::ostream & S);
+
+		/****************** Print ******************/
+		/**** md5 signature: 5d0e4822af3cf499d0d29a1903417a5b ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+K: TopOpeBRepDS_Kind
+I: int
+S: std::ostream
+B: TCollection_AsciiString,optional
+	default value is ""
+A: TCollection_AsciiString,optional
+	default value is ""
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TopOpeBRepDS_Kind K, const Standard_Integer I, std::ostream & S, const TCollection_AsciiString & B = "", const TCollection_AsciiString & A = "");
+
+		/****************** Print ******************/
+		/**** md5 signature: 4d591b5485e1695cd7750b55883e11d9 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+T: TopAbs_ShapeEnum
+I: int
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TopAbs_ShapeEnum T, const Standard_Integer I, std::ostream & S);
+
+		/****************** Print ******************/
+		/**** md5 signature: a5f6b6cef25348e934b1a293f0918f9b ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+C: TopOpeBRepDS_Config
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		static std::ostream & Print(const TopOpeBRepDS_Config C, std::ostream & S);
+
 		/****************** SPrint ******************/
 		/**** md5 signature: 8e8bd1974589e4b4a60a8ae1d385d1b2 ****/
 		%feature("compactdefaultargs") SPrint;
@@ -1492,14 +1578,69 @@ bool
 ") OneVertexOnPnt;
 		Standard_Boolean OneVertexOnPnt();
 
+		/****************** Print ******************/
+		/**** md5 signature: 086af6ff7c70fce4047a52ee56d84e30 ****/
+		%feature("compactdefaultargs") Print;
+		%feature("autodoc", "Prints the name of checkstatus <stat> as a string.
 
-        %feature("autodoc", "1");
-        %extend{
-            std::string PrintIntgToString() {
-            std::stringstream s;
-            self->PrintIntg(s);
-            return s.str();}
-        };
+Parameters
+----------
+stat: TopOpeBRepDS_CheckStatus
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") Print;
+		std::ostream & Print(const TopOpeBRepDS_CheckStatus stat, std::ostream & S);
+
+		/****************** PrintIntg ******************/
+		/**** md5 signature: 87c9033c33359faee40e17ca777bad2d ****/
+		%feature("compactdefaultargs") PrintIntg;
+		%feature("autodoc", "No available documentation.
+
+Parameters
+----------
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") PrintIntg;
+		std::ostream & PrintIntg(std::ostream & S);
+
+		/****************** PrintShape ******************/
+		/**** md5 signature: c932bb977c67cb2dcc0f16639aaccff2 ****/
+		%feature("compactdefaultargs") PrintShape;
+		%feature("autodoc", "Prints the name of checkstatus <stat> as a string.
+
+Parameters
+----------
+SE: TopAbs_ShapeEnum
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") PrintShape;
+		std::ostream & PrintShape(const TopAbs_ShapeEnum SE, std::ostream & S);
+
+		/****************** PrintShape ******************/
+		/**** md5 signature: d41a7aa820a314e867e8755240d58f62 ****/
+		%feature("compactdefaultargs") PrintShape;
+		%feature("autodoc", "Prints the name of checkstatus <stat> as a string.
+
+Parameters
+----------
+index: int
+S: std::ostream
+
+Returns
+-------
+std::ostream
+") PrintShape;
+		std::ostream & PrintShape(const Standard_Integer index, std::ostream & S);
+
 };
 
 
