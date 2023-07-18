@@ -4909,3 +4909,4 @@ def BRep_Tool_Parameters(*args):
 def BRep_Tool_Pnt(*args):
 	return BRep_Tool.Pnt(*args)
 
+}
